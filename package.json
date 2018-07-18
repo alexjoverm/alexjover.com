@@ -1,0 +1,17 @@
+{
+  "name": "alexjover.com",
+  "version": "0.0.1",
+  "description": "Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "author": "Alex Jover <alejovermorales@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.0.3",
+    "vuepress": "^0.12.0"
+  }
+}
