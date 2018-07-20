@@ -1,15 +1,24 @@
+const path = require("path");
+
 module.exports = {
   title: "Alex Jover",
   description: "Web and JavaScript",
   themeConfig: {
-    sidebar: ["/", "/ham", "/caca/"],
-    nav: ["Blog", "Courses", "About Me"]
+    locales: {
+      "/": {
+        sidebar: ["/", "/ham", "/caca/"],
+        nav: [
+          { text: "Blog", link: "/blog" },
+          { text: "Courses", link: "/courses" }
+        ]
+      }
+    }
   },
   configureWebpack: {
-    // resolve: {
-    //   alias: {
-    //     '@alias': 'path/to/some/dir'
-    //   }
-    // }
+    resolve: {
+      alias: {
+        "@": path.resolve(__dirname, ".")
+      }
+    }
   }
 };

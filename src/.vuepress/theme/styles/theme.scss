@@ -1,14 +1,20 @@
 // colors
 $accent-color: #0b87f0;
-$text-color: #2c3e50;
+$text-color: #3e4850;
+$text-inv-color: #fff;
 $border-color: #eaecef;
 $code-bg-color: #282c34;
 $arrow-bg-color: #ccc;
 
 // layout
-$navbar-height: 3.6rem;
 $sidebar-width: 20rem;
 $content-width: 740px;
+
+// navbar
+$navbar-height: 3.6rem;
+$navbar-link-height: 1.4rem;
+$navbar-link-padding-v: 1rem;
+$navbar-link-padding-h: 0.6rem;
 
 // responsive breakpoints
 $mq-md: 959px;
