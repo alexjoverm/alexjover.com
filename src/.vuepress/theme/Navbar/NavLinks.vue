@@ -79,12 +79,12 @@ export default {
   display: none;
 
   a {
-    font-size: 1.1rem;
+    font-size: $navbar-link-font-size;
     line-height: $navbar-link-height;
     color: $text-inv-color;
     text-decoration: none;
     padding: $navbar-link-padding-v $navbar-link-padding-h;
-    font-weight: 500;
+    font-weight: 600;
 
     &:hover,
     &.router-link-active {

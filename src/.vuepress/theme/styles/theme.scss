@@ -1,25 +1,16 @@
-// colors
-$accent-color: #0b87f0;
-$text-color: #3e4850;
-$text-inv-color: #fff;
-$border-color: #eaecef;
-$code-bg-color: #282c34;
-$arrow-bg-color: #ccc;
+@import "./_theme/functions";
+@import "./_theme/colors";
+@import "./_theme/layout";
+@import "./_theme/fonts";
+@import "./navbar";
 
 // layout
 $sidebar-width: 20rem;
 $content-width: 740px;
-
-// navbar
-$navbar-height: 3.6rem;
-$navbar-link-height: 1.4rem;
-$navbar-link-padding-v: 1rem;
-$navbar-link-padding-h: 0.6rem;
 
 // responsive breakpoints
 $mq-md: 959px;
 $mq-sm: 719px;
 $mq-xs: 419px;
 
-// code
-$line-numbers-width: 3.5rem;
+// navbar

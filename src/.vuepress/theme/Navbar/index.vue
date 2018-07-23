@@ -26,18 +26,17 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/theme.scss";
-$navbar-padding-right: 1.5rem - $navbar-link-padding-h;
 
 .navbar {
   display: flex;
-  padding: 0.7rem $navbar-padding-right 0.7rem 1.5rem;
+  padding: $navbar-padding;
   line-height: $navbar-height - $navbar-link-height;
   position: relative;
   background: $accent-color;
 }
 
 .title-side {
-  width: 11rem;
+  width: 16rem;
   display: flex;
 }
 

@@ -140,7 +140,7 @@ export default {
 
   input {
     cursor: text;
-    width: 10rem;
+    width: 15rem;
     color: lighten($text-color, 10%);
     display: inline-block;
     border: 1px solid darken($border-color, 10%);
@@ -159,7 +159,7 @@ export default {
   }
   .suggestions {
     background: #fff;
-    width: 20rem;
+    width: 25rem;
     position: absolute;
     top: 1.5rem;
     border: 1px solid darken($border-color, 10%);
@@ -205,7 +205,7 @@ export default {
       position: relative;
       &:focus {
         cursor: text;
-        width: 10rem;
+        width: 10em;
       }
     }
   }

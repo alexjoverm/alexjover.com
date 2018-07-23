@@ -8,7 +8,7 @@ module.exports = {
       "/": {
         sidebar: ["/", "/ham", "/caca/"],
         nav: [
-          { text: "Blog", link: "/blog" },
+          { text: "Blog", link: "/blog/" },
           { text: "Courses", link: "/courses" }
         ]
       }

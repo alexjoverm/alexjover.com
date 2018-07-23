@@ -8,7 +8,8 @@
 @import "../styles/theme";
 
 .brand-link {
-  font-size: 1.35rem;
+  font-size: $font-size-base * 1.2;
+  line-height: 2.2rem;
   font-weight: 600;
   color: $text-inv-color;
   text-decoration: none;

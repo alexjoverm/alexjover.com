@@ -3,7 +3,7 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
-    <h1>Hi buddy!</h1>
+    <component :is="getPageComponent"></component>
     <pre>{{ $page }}</pre>
     <!-- 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
@@ -27,12 +27,13 @@ import Vue from "vue";
 import nprogress from "nprogress";
 // import Home from './Home.vue'
 import Navbar from "./Navbar";
-// import Page from './Page.vue'
+// import Page from "./Page.vue";
+import Post from "./Post.vue";
 // import Sidebar from './Sidebar.vue'
 // import { resolveSidebarItems } from './util'
 
 export default {
-  components: { Navbar },
+  components: { Navbar, Post },
   // components: { Home, Page, Sidebar, Navbar },
   data() {
     return {
@@ -41,6 +42,9 @@ export default {
   },
 
   computed: {
+    getPageComponent() {
+      if (/\/blog\/20[0-9]{2}/.test(this.$page.path)) return "Post";
+    },
     shouldShowNavbar() {
       const { themeConfig } = this.$site;
       const { frontmatter } = this.$page;
