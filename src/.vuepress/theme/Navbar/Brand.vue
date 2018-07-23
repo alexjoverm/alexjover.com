@@ -9,7 +9,7 @@
 
 .brand-link {
   font-size: $font-size-base * 1.2;
-  line-height: 2.2rem;
+  line-height: 2.8rem;
   font-weight: 600;
   color: $text-inv-color;
   text-decoration: none;

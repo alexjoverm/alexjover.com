@@ -144,14 +144,14 @@ export default {
     color: lighten($text-color, 10%);
     display: inline-block;
     border: 1px solid darken($border-color, 10%);
-    border-radius: 1rem;
-    font-size: 0.9rem;
-    line-height: 2rem;
-    padding: 0 0.5rem 0 2rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    padding: 0 0.5rem 0 2.8rem;
     outline: none;
     transition: all 0.2s ease;
-    background: #fff url(./search.svg) 0.6rem 0.5rem no-repeat;
-    background-size: 1rem;
+    background: #fff url(./search.svg) 0.8rem 0.7rem no-repeat;
+    background-size: 1.4rem;
     &:focus {
       cursor: auto;
       border-color: $accent-color;
@@ -159,7 +159,7 @@ export default {
   }
   .suggestions {
     background: #fff;
-    width: 25rem;
+    width: 35rem;
     position: absolute;
     top: 1.5rem;
     border: 1px solid darken($border-color, 10%);
@@ -180,10 +180,11 @@ export default {
       color: lighten($text-color, 35%);
 
       .page-title {
+        font-size: 1.6rem;
         font-weight: 600;
       }
       .header {
-        font-size: 0.9em;
+        font-size: 1.5rem;
         margin-left: 0.25em;
       }
     }

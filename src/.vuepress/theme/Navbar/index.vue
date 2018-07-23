@@ -30,7 +30,6 @@ export default {
 .navbar {
   display: flex;
   padding: $navbar-padding;
-  line-height: $navbar-height - $navbar-link-height;
   position: relative;
   background: $accent-color;
 }
