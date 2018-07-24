@@ -30,7 +30,8 @@ export default {
 .navbar {
   display: flex;
   padding: $navbar-padding;
-  background: $accent-color;
+  background: linear-gradient(to right, $accent-color 0%, #00acc1 100%);
+
   z-index: $z-index-navbar;
 }
 
