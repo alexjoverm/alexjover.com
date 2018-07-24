@@ -5,6 +5,7 @@ excerpt: Here are my insights about organising Alicante Frontend's meetup after 
 date: 2017-11-21 10:46:07
 tags:
  - Community
+layout: Post
 ---
 
 # 1 year Organising Alicante Frontend

@@ -7,7 +7,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "./styles/theme.scss";
+@import "~styles/theme.scss";
 
 .sidebar-button {
   display: none;
@@ -21,7 +21,7 @@
   }
 }
 
-@media (max-width: $mq-sm) {
+@media (max-width: $mq-xs-max) {
   .sidebar-button {
     display: inline-block;
   }

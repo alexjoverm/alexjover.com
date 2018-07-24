@@ -9,8 +9,16 @@ $sidebar-width: 20rem;
 $content-width: 740px;
 
 // responsive breakpoints
-$mq-md: 959px;
-$mq-sm: 719px;
-$mq-xs: 419px;
+$mq-xs: 420px;
+$mq-sm: 720px;
+$mq-md: 960px;
+$mq-lg: 1366px;
+$mq-xxs-max: $mq-xs - 1;
+$mq-xs-max: $mq-sm - 1;
+$mq-sm-max: $mq-md - 1;
+$mq-md-max: $mq-lg - 1;
 
-// navbar
+// index
+$z-index-backdrop: 45;
+$z-index-sidebar: 50;
+$z-index-navbar: 55;

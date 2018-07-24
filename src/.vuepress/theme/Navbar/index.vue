@@ -7,7 +7,7 @@
 
     <div class="nav-side">
       <SearchBox/>
-      <NavLinks/>
+      <NavLinks class="navlinks"/>
     </div>
   </header>
 </template>
@@ -25,12 +25,13 @@ export default {
 
 
 <style lang="scss" scoped>
-@import "../styles/theme.scss";
+@import "~styles/theme.scss";
 
 .navbar {
   display: flex;
   padding: $navbar-padding;
   background: $accent-color;
+  z-index: $z-index-navbar;
 }
 
 .title-side {
@@ -41,5 +42,11 @@ export default {
 .nav-side {
   flex: 1;
   text-align: right;
+}
+
+@media (max-width: $mq-xs-max) {
+  .nav-links {
+    display: none;
+  }
 }
 </style>

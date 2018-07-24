@@ -3,8 +3,15 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
-    <component class="dynamic-content" :is="getPageComponent"></component>
+    <Sidebar :open="isSidebarOpen" />
+    <SidebarBackdrop v-show="isSidebarOpen" @toggle-sidebar="toggleSidebar(false)"/>
+    <main class="page-content">
+      <component :is="getPageComponent"></component>
+    </main>
+    <!-- <slot name="top"></slot>
+    <slot name="bottom"></slot> -->
     <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
+    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
     <!-- 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
@@ -28,12 +35,12 @@ import nprogress from "nprogress";
 // import Home from './Home.vue'
 import Navbar from "./Navbar";
 // import Page from "./Page.vue";
-import Post from "./Post.vue";
-// import Sidebar from './Sidebar.vue'
+import Sidebar from "./Sidebar.vue";
+import SidebarBackdrop from "./SidebarBackdrop.vue";
 // import { resolveSidebarItems } from './util'
 
 export default {
-  components: { Navbar, Post },
+  components: { Navbar, Sidebar, SidebarBackdrop },
   // components: { Home, Page, Sidebar, Navbar },
   data() {
     return {
@@ -43,7 +50,8 @@ export default {
 
   computed: {
     getPageComponent() {
-      if (/\/blog\/20[0-9]{2}/.test(this.$page.path)) return "Post";
+      const comp = this.$page.frontmatter.layout || "Post";
+      return () => import(`./pages/${comp}`);
     },
     shouldShowNavbar() {
       const { themeConfig } = this.$site;
@@ -108,6 +116,7 @@ export default {
 
   methods: {
     toggleSidebar(to) {
+      console.log("toggle");
       this.isSidebarOpen = typeof to === "boolean" ? to : !this.isSidebarOpen;
     },
     // side swipe
@@ -136,11 +145,12 @@ export default {
 <style src="./styles/index.scss" lang="scss"></style> 
 
 <style lang="scss" scoped>
-@import "./styles/theme";
+@import "~styles/theme";
 
 $padding-offset: 3rem;
 
-.dynamic-content {
+.sidebar,
+.page-content {
   padding-top: $navbar-height + $padding-offset;
 }
 </style>

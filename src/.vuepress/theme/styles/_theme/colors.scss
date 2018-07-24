@@ -1,18 +1,18 @@
 // Main colors
-// $accent-color: #0b87f0;
-$accent-color: shade(#3eaf7c, 4%);
-// $accent-color: #b041bf;
+$accent-color: #26a683;
 $complement-color: complement($accent-color);
+
+$white-color: #fff;
+$gray-lightest: #eee;
+$gray-lighter: #ccc;
 
 // Text
 $text-color: #3e4850;
-$text-inv-color: #fff;
+$text-inv-color: $white-color;
 
+$background-color: $white-color;
 $border-color: #eaecef;
 
 $code-bg-color: #282c34;
-// $code-color: shade($complement-color, 3%);
 // $code-color: #666;
-$code-color: #f0740b;
-
-$arrow-bg-color: #ccc;
+$code-color: #ff7043;

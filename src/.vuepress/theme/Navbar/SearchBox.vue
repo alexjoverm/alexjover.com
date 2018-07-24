@@ -29,6 +29,9 @@
 </template>
 
 <script>
+const matches = (item, query) =>
+  item.title && item.title.toLowerCase().indexOf(query) > -1;
+
 export default {
   data() {
     return {
@@ -50,8 +53,6 @@ export default {
       const { pages, themeConfig } = this.$site;
       const max = themeConfig.searchMaxSuggestions || 5;
       const localePath = this.$localePath;
-      const matches = item =>
-        item.title && item.title.toLowerCase().indexOf(query) > -1;
       const res = [];
       for (let i = 0; i < pages.length; i++) {
         if (res.length >= max) break;
@@ -60,13 +61,13 @@ export default {
         if (this.getPageLocalePath(p) !== localePath) {
           continue;
         }
-        if (matches(p)) {
+        if (matches(p, query)) {
           res.push(p);
         } else if (p.headers) {
           for (let j = 0; j < p.headers.length; j++) {
             if (res.length >= max) break;
             const h = p.headers[j];
-            if (matches(h)) {
+            if (matches(h, query)) {
               res.push(
                 Object.assign({}, p, {
                   path: p.path + "#" + h.slug,
@@ -131,7 +132,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/theme.scss";
+@import "~styles/theme.scss";
 
 .search-box {
   display: inline-block;
@@ -197,7 +198,7 @@ export default {
   }
 }
 
-@media (max-width: $mq-md) {
+@media (max-width: $mq-sm-max) {
   .search-box {
     input {
       cursor: pointer;
@@ -212,7 +213,7 @@ export default {
   }
 }
 
-@media (max-width: $mq-md) and (min-width: $mq-md) {
+@media (max-width: $mq-sm) and (min-width: $mq-sm-max) {
   .search-box {
     .suggestions {
       left: 0;
@@ -229,7 +230,7 @@ export default {
   }
 }
 
-@media (max-width: $mq-xs) {
+@media (max-width: $mq-xxs-max) {
   .search-box {
     .suggestions {
       width: calc(100vw - 4rem);

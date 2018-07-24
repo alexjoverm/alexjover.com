@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav-links can-hide" v-if="userLinks.length || repoLink">
+  <nav class="nav-links" v-if="userLinks.length || repoLink">
     <!-- user links -->
     <div
       class="nav-item"
@@ -54,29 +54,21 @@ export default {
       return this.userNav;
     },
     userLinks() {
-      console.log(this.nav);
-      console.log(
-        (this.nav || []).map(link => {
-          return Object.assign(resolveNavLinkItem(link), {
-            items: (link.items || []).map(resolveNavLinkItem)
-          });
+      return (this.nav || []).map(link =>
+        Object.assign(resolveNavLinkItem(link), {
+          items: (link.items || []).map(resolveNavLinkItem)
         })
       );
-      return (this.nav || []).map(link => {
-        return Object.assign(resolveNavLinkItem(link), {
-          items: (link.items || []).map(resolveNavLinkItem)
-        });
-      });
     }
   }
 };
 </script>
 
 <style lang="scss">
-@import "../styles/theme";
+@import "~styles/theme";
 
 .nav-links {
-  display: none;
+  display: inline-block;
 
   a {
     font-size: $navbar-link-font-size;
@@ -99,13 +91,8 @@ export default {
     line-height: 2rem;
   }
 }
-@media (min-width: $mq-sm) {
-  .nav-links {
-    display: inline-block;
-  }
-}
 
-// @media (max-width: $mq-sm) {
+// @media (max-width: $mq-sm-max) {
 //   .nav-links {
 //     .nav-item,
 //     .repo-link {

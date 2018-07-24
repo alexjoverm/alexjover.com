@@ -1,5 +1,7 @@
 const path = require("path");
 
+console.log(path.resolve(__dirname, "theme"));
+
 module.exports = {
   title: "Alex Jover",
   description: "Web and JavaScript",
@@ -17,7 +19,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        "@": path.resolve(__dirname, ".")
+        styles: path.resolve(__dirname, "theme", "styles")
       }
     }
   }

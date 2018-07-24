@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../styles/theme";
+@import "~styles/theme";
 
 .brand-link {
   font-size: $navbar-brand-size;
