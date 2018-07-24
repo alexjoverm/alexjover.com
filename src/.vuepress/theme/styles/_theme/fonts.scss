@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 @import "./functions";
 
 // fonts
@@ -30,11 +31,12 @@ $line-height-computed: round-decimals(
   $font-size-base * $line-height-base * $line-height-text-factor
 );
 
+$text-margin-factor: 0.5;
+
 $headings-margin-factor: (
   top: 1.2,
   bottom: 0.75
 );
-$text-margin-factor: 0.5;
 
 $headings-font-family: inherit;
 $headings-font-weight: 600;
@@ -44,3 +46,6 @@ $headings-color: inherit;
 // code
 // $line-numbers-width: 3.5rem;
 $line-height-code: 2.2rem;
+
+// links
+$links-font-weight: 500;

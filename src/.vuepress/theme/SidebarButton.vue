@@ -11,13 +11,13 @@
 
 .sidebar-button {
   display: none;
-  margin-right: 0.6rem;
+  margin-right: 1.5rem;
   color: white;
 
   .icon {
     display: block;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: $navbar-brand-size;
+    height: $navbar-brand-size;
   }
 }
 

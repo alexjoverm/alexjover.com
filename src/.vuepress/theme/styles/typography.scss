@@ -28,6 +28,10 @@ h3,
   &:not(:first-child) {
     margin-top: map-get($headings-margin-factor, top) * $line-height-computed;
   }
+
+  &:hover .header-anchor {
+    opacity: 1;
+  }
 }
 
 h1,
@@ -55,15 +59,20 @@ h6,
   font-size: $font-size-h6;
 }
 
+.header-anchor {
+  opacity: 0;
+  margin-left: -0.91em;
+}
+
 // Body text
 p,
 .p {
   margin: 0 0 ($line-height-computed * $text-margin-factor);
 }
 
-// Code
 code {
-  background: desaturate(tint($accent-color, 92%), 30%);
+  background: desaturate(tint($code-color, 92%), 30%);
+  color: $code-color;
   border-radius: 3px;
   font-size: ($font-size-base + 0.3);
   padding: 1px 4px;
@@ -76,11 +85,13 @@ pre[class*="language-"] {
 
   & code {
     background: inherit;
+    color: inherit;
   }
 }
 
 a {
   color: $accent-color;
+  font-weight: $links-font-weight;
   text-decoration: none;
 
   &:hover,

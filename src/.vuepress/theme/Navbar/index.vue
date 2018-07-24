@@ -1,5 +1,5 @@
 <template>
-  <header class="navbar">
+  <header class="navbar sticky">
     <div class="title-side">
       <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
       <Brand/>
@@ -30,7 +30,6 @@ export default {
 .navbar {
   display: flex;
   padding: $navbar-padding;
-  position: relative;
   background: $accent-color;
 }
 

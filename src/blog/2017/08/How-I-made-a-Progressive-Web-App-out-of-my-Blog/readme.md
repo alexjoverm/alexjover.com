@@ -6,7 +6,8 @@ tags:
 description: I wanted to learn about PWA (Progressive Web Apps), so I decided to make this blog a PWA
 excerpt: >- 
   One day I wanted to learn about PWA (Progressive Web App), so I though: What's better than doing it with my own blog?
-date: 2017-08-07 12:42:29
+date: 2017-08-07 
+layout: Caca
 ---
 
 # How I made a Progressive Web App out of my Blog
@@ -23,7 +24,7 @@ For the PWA metrics, it was half-way, and I've never payed attention to that. Le
 
 ## 1. Create a Web App Manifest and Icons
 
-The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a JSON file designed to describe a Web Application. This is a excerpt of my [`manifest.json`](https://github.com/alexjoverm/blog/blob/master/themes/beautiful-hexo/source/manifest.json):
+The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a JSON file designed to describe a Web Application. This is a excerpt of my `manifest.json`:
 
 ```json
 {
@@ -43,7 +44,7 @@ The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is
 
 I think the names are pretty descriptive by themselves. Make sure at least you add the `name`, `short_name` and `icons` fields.
 
-Some other fields you may be interested in, are [`start_url`](https://developer.mozilla.org/es/docs/Web/Manifest#start_urlhttps://developer.mozilla.org/es/docs/Web/Manifest#start_url) and [`scope`](https://developer.mozilla.org/es/docs/Web/Manifest#scope).
+Some other fields you may be interested in, are `start_url` and `scope`.
 
 As per the **icons**, you need to generate them in several sizes. For that I've used [this Web App Manifest generator](https://app-manifest.firebaseapp.com/), which also helps you creating the `manifest.json` file. I've downloaded the zip file from that web, unzipped it and moved the files to where they belong. Then updated the `src` property of the `icons` array as needed.
 
@@ -53,7 +54,7 @@ Finally, you must include it with a `meta` tag in the [head of the HTML](https:/
 <link rel="manifest" href="/manifest.json">
 ```
 
-## 2. Add meta tags
+### 2. Add meta tags
 
 You need to add [some meta tags](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/) so all supported browsers would appropriately understand it as a Progressive Web App. The [tags I added](https://github.com/alexjoverm/blog/blob/master/themes/beautiful-hexo/layout/partial/head.jade#L13-L23) are:
 

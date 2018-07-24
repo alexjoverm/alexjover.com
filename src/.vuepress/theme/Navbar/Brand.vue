@@ -8,7 +8,7 @@
 @import "../styles/theme";
 
 .brand-link {
-  font-size: $font-size-base * 1.2;
+  font-size: $navbar-brand-size;
   line-height: 2.8rem;
   font-weight: 600;
   color: $text-inv-color;

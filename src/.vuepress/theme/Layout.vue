@@ -3,8 +3,8 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
-    <component :is="getPageComponent"></component>
-    <pre>{{ $page }}</pre>
+    <component class="dynamic-content" :is="getPageComponent"></component>
+    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
     <!-- 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
@@ -134,3 +134,13 @@ export default {
 
 <style src="prismjs/themes/prism-tomorrow.css"></style>
 <style src="./styles/index.scss" lang="scss"></style> 
+
+<style lang="scss" scoped>
+@import "./styles/theme";
+
+$padding-offset: 3rem;
+
+.dynamic-content {
+  padding-top: $navbar-height + $padding-offset;
+}
+</style>
