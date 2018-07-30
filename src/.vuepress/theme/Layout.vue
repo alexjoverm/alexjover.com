@@ -2,16 +2,19 @@
   <div class="theme-container"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
+
     <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
-    <Sidebar :open="isSidebarOpen" />
-    <SidebarBackdrop v-show="isSidebarOpen" @toggle-sidebar="toggleSidebar(false)"/>
-    <main class="page-content">
-      <component :is="getPageComponent"></component>
-    </main>
-    <!-- <slot name="top"></slot>
-    <slot name="bottom"></slot> -->
-    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
-    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
+    <div class="wrapper">  
+      <Sidebar :open="isSidebarOpen" />
+      <SidebarBackdrop v-show="isSidebarOpen" @toggle-sidebar="toggleSidebar(false)"/>
+      <main class="page-content">
+        <component :is="getPageComponent"></component>
+      </main>
+      <!-- <slot name="top"></slot>
+      <slot name="bottom"></slot> -->
+      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
+      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
+    </div>
     <!-- 
     <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
     <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">

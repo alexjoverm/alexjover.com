@@ -16,3 +16,6 @@ $border-color: #eaecef;
 $code-bg-color: #282c34;
 // $code-color: #666;
 $code-color: #ff7043;
+
+$navbar-color: linear-gradient(to right, $accent-color 0%, #00acc1 100%);
+$button-color: $navbar-color;

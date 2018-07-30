@@ -1,3 +1,5 @@
+@import "./theme";
+
 .no-button {
   background: none;
   color: inherit;
@@ -16,4 +18,24 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.wrapper {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: $mq-md) {
+  .wrapper {
+    max-width: $mq-md;
+  }
+}
+
+@media (min-width: $mq-lg) {
+  .wrapper {
+    max-width: $mq-lg;
+  }
 }

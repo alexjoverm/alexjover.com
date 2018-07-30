@@ -1,13 +1,15 @@
 <template>
   <header class="navbar sticky">
-    <div class="title-side">
-      <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
-      <Brand/>
-    </div>
+    <div class="wrapper">
+      <div class="title-side">
+        <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
+        <Brand/>
+      </div>
 
-    <div class="nav-side">
-      <SearchBox/>
-      <NavLinks class="navlinks"/>
+      <div class="nav-side">
+        <SearchBox/>
+        <NavLinks class="navlinks"/>
+      </div>
     </div>
   </header>
 </template>
@@ -28,11 +30,14 @@ export default {
 @import "~styles/theme.scss";
 
 .navbar {
-  display: flex;
-  padding: $navbar-padding;
-  background: linear-gradient(to right, $accent-color 0%, #00acc1 100%);
-
+  padding-top: $navbar-padding-v;
+  padding-bottom: $navbar-padding-v;
+  background: $navbar-color;
   z-index: $z-index-navbar;
+}
+
+.wrapper {
+  display: flex;
 }
 
 .title-side {

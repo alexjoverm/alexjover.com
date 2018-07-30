@@ -1,9 +1,4 @@
 ---
+sidebar: false
 layout: Blog
 ---
-
-# This is some
-
-contents for the blog
-
-- you yo
