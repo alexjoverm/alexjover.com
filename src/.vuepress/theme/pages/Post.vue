@@ -8,6 +8,6 @@
 @import "~styles/theme";
 
 .post {
-  padding: 1rem $layout-padding $layout-padding;
+  padding-top: 1rem;
 }
 </style>

@@ -1,12 +1,12 @@
 <template>
-  <div class="sidebar-backdrop" @click="$emit('toggle-sidebar')"></div>
+  <div class="menu-backdrop" @click="$emit('toggle-menu')"></div>
 </template>
 
 
 <style lang="scss" scoped>
 @import "~styles/theme";
 
-.sidebar-backdrop {
+.menu-backdrop {
   position: absolute;
   top: 0;
   left: 0;

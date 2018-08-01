@@ -1,71 +1,28 @@
 <template>
-  <div class="sidebar" :class="{ open: open }">
-    <div class="inner-sidebar">
-      <NavLinks/>
-      <!-- SubscribeForm -->
-    </div>
+  <div class="sidebar">
+    <label for="lele">Fancy stuff!</label>
+    <input id="lele" type="text">
   </div>
 </template>
 
 <script>
-import NavLinks from "./Navbar/NavLinks";
-
-export default {
-  props: ["open"],
-  components: { NavLinks }
-};
+export default {};
 </script>
 
 <style lang="scss" scoped>
 @import "~styles/theme";
+$sidebar-width: 230px;
+$sidebar-margin: 30px;
 
 .sidebar {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 250px;
-  background: $background-color;
-  z-index: $z-index-sidebar;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0, 1);
-  transform: translateX(-100%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-  &.open {
-    transform: translateX(0);
-  }
+  display: none;
 }
 
-.inner-sidebar {
-  padding: 0 $layout-padding;
-}
-</style>
-
-<style lang="scss">
-@import "~styles/theme";
-
-.sidebar {
-  .nav-links {
+@media (min-width: $mq-sm) {
+  .sidebar {
     display: block;
-    width: 100%;
-    padding: 1.5rem 0;
-
-    .nav-item {
-      display: block;
-      width: 100%;
-    }
-
-    a {
-      display: block;
-      color: $text-color;
-      padding: 1.3rem 0;
-
-      &:hover,
-      &.router-link-active {
-        color: $accent-color;
-      }
-    }
+    width: $sidebar-width;
+    margin-left: $sidebar-margin;
   }
 }
 </style>

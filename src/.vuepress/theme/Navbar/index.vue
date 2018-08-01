@@ -2,7 +2,7 @@
   <header class="navbar sticky">
     <div class="wrapper">
       <div class="title-side">
-        <SidebarButton @toggle-sidebar="$emit('toggle-sidebar')"/>
+        <MenuButton v-if="shouldShowMenu" @toggle-menu="$emit('toggle-menu')"/>
         <Brand/>
       </div>
 
@@ -15,13 +15,14 @@
 </template>
 
 <script>
-import SidebarButton from "../SidebarButton.vue";
+import MenuButton from "../MenuButton.vue";
 import SearchBox from "./SearchBox.vue";
 import NavLinks from "./NavLinks.vue";
 import Brand from "./Brand.vue";
 
 export default {
-  components: { SidebarButton, NavLinks, Brand, SearchBox }
+  components: { MenuButton, NavLinks, Brand, SearchBox },
+  props: ["shouldShowMenu"]
 };
 </script>
 

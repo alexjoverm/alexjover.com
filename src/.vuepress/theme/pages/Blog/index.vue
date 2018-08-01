@@ -39,8 +39,4 @@ export default {
   //   color: $white-color;
   // }
 }
-
-.blog {
-  padding-top: $layout-padding;
-}
 </style>
