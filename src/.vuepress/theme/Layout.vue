@@ -1,10 +1,15 @@
 <template>
   <div class="theme-container"
+    :class="classes"
     @touchstart="onTouchStart"
     @touchend="onTouchEnd">
 
     <Navbar v-if="shouldShowNavbar" :should-show-menu="shouldShowMenu" @toggle-menu="toggleMenu"/>
-    <div class="wrapper" :class="pageSlug">  
+    <div class="hero-container" v-if="shouldShowHero">
+      <component :is="heroComponent"></component>
+    </div>
+
+    <div class="wrapper">  
       <div v-if="shouldShowMenu" class="menu-wrapper">
         <Menu :open="isMenuOpen" />
         <MenuBackdrop v-show="isMenuOpen" @toggle-menu="toggleMenu(false)"/>
@@ -12,7 +17,7 @@
 
       <div class="content-container">
         <main class="page-content">
-          <component :is="getPageComponent"></component>
+          <component :is="pageComponent"></component>
         </main>
 
         <Sidebar v-if="shouldShowSidebar"/>
@@ -20,8 +25,8 @@
 
       <!-- <slot name="top"></slot>
       <slot name="bottom"></slot> -->
-      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
-      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
+      <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre> -->
+      <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre> -->
     </div>
     <!-- 
     <div class="menu-mask" @click="toggleMenu(false)"></div>
@@ -60,12 +65,22 @@ export default {
   },
 
   computed: {
+    classes() {
+      return {
+        [this.pageSlug]: true,
+        "with-hero": this.shouldShowHero
+      };
+    },
     pageSlug() {
       return `page-${kebabCase(this.$page.frontmatter.layout || "Post")}`;
     },
-    getPageComponent() {
+    pageComponent() {
       const comp = this.$page.frontmatter.layout || "Post";
       return () => import(`./pages/${comp}`);
+    },
+    heroComponent() {
+      const comp = this.$page.frontmatter.hero;
+      return () => import(`./${comp}`);
     },
     shouldShowNavbar() {
       const { themeConfig } = this.$site;
@@ -79,6 +94,9 @@ export default {
         // themeConfig.repo ||
         themeConfig.nav || this.$themeLocaleConfig.nav
       );
+    },
+    shouldShowHero() {
+      return !!this.$page.frontmatter.hero;
     },
     shouldShowMenu() {
       return this.$site.menu !== false && this.$page.frontmatter.menu !== false;
@@ -161,15 +179,26 @@ export default {
 <style lang="scss" scoped>
 @import "~styles/theme";
 
-.menu {
+.menu,
+.hero-container,
+.content-container {
   padding-top: $layout-padding + $navbar-height;
+}
+
+.with-hero .content-container {
+  padding-top: 0;
 }
 
 .content-container {
   display: flex;
-  padding-top: $layout-padding + $navbar-height;
 }
+
+.hero-container {
+  display: flex;
+}
+
 .page-content {
   flex: 1;
+  overflow: auto;
 }
 </style>

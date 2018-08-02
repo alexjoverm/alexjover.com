@@ -1,28 +1,44 @@
 <template>
   <div class="sidebar">
-    <label for="lele">Fancy stuff!</label>
-    <input id="lele" type="text">
+    <SubscribeForm/>
   </div>
 </template>
 
 <script>
-export default {};
+import SubscribeForm from "./SubscribeForm";
+
+export default {
+  components: { SubscribeForm }
+};
 </script>
 
 <style lang="scss" scoped>
 @import "~styles/theme";
-$sidebar-width: 230px;
-$sidebar-margin: 30px;
+
+$sidebar-width-sm: 180px;
+$sidebar-margin-sm: 35px;
+
+$sidebar-width-md: 230px;
+$sidebar-margin-md: 60px;
 
 .sidebar {
   display: none;
+  flex: 0 0 $sidebar-width-sm;
+  margin-left: $sidebar-margin-sm;
+  // background: yellow;
+  padding-top: $layout-padding;
 }
 
 @media (min-width: $mq-sm) {
   .sidebar {
     display: block;
-    width: $sidebar-width;
-    margin-left: $sidebar-margin;
+  }
+}
+
+@media (min-width: $mq-md) {
+  .sidebar {
+    flex: 0 0 $sidebar-width-md;
+    margin-left: $sidebar-margin-md;
   }
 }
 </style>

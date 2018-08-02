@@ -1,5 +1,5 @@
 <template>
-  <main class="blog">
+  <div class="blog">
     <section class="posts">
       <input type="text"> <span style="padding: 2rem;"></span>
       <input class="rounded" type="text"> <br><br>
@@ -8,7 +8,7 @@
       <br><br>
       <PostCard :post="post" v-for="post in posts" :key="post.key"/>
     </section>
-  </main>
+  </div>
 </template>
 
 <script>

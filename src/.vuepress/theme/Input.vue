@@ -1,13 +1,14 @@
 <template>
-  <input class="input" :class="{'rounded': rounded}"> <slot/> </input>
+  <input class="input" :class="{'rounded': rounded}" :value="value" @input="$emit('input', $event.target.value)"/>
 </template>
 
 <script>
 export default {
   props: {
+    value: String,
     rounded: {
       type: Boolean,
-      default: true
+      default: false
     }
   }
 };
@@ -24,7 +25,7 @@ input {
   color: inherit;
   outline: inherit;
   box-shadow: 0 1px 1px $gray-lightest;
-  padding: 4px 12px;
+  padding: 0.6rem 1.8rem;
   transition: border 0.2s ease, box-shadow 0.2s ease;
   border-radius: 3px;
 
@@ -36,6 +37,5 @@ input {
 
 .rounded {
   border-radius: 10rem;
-  padding: 4px 14px;
 }
 </style>

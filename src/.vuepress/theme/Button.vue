@@ -29,7 +29,7 @@ $button-border-width: 2px;
   outline: inherit;
   background: $button-color;
   color: $white-color;
-  padding: 0.8rem 1.8rem;
+  padding: 0.6rem 1.8rem;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;

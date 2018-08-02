@@ -13,14 +13,14 @@ $font-family-title: $font-family-base;
 
 $font-size-html: 62.5%;
 $font-size-base-px: 16px;
-$font-size-base: 1.8rem;
+$font-size-base: 1.7rem;
 
-$font-size-h1: round-decimals(($font-size-base * 2));
-$font-size-h2: round-decimals(($font-size-base * 1.7));
-$font-size-h3: round-decimals(($font-size-base * 1.5));
-$font-size-h4: round-decimals(($font-size-base * 1.2));
+$font-size-h1: round-decimals($font-size-base * 2);
+$font-size-h2: round-decimals($font-size-base * 1.7);
+$font-size-h3: round-decimals($font-size-base * 1.5);
+$font-size-h4: round-decimals($font-size-base * 1.2);
 $font-size-h5: $font-size-base;
-$font-size-h6: round-decimals(($font-size-base * 0.85));
+$font-size-h6: round-decimals($font-size-base * 0.85);
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base: 1.428571429; // 20/14
@@ -49,3 +49,8 @@ $line-height-code: 2.2rem;
 
 // links
 $links-font-weight: 500;
+
+@mixin small-text($factor: 0.85) {
+  font-size: round-decimals($font-size-base * $factor);
+  line-height: round-decimals($line-height-computed * $factor);
+}

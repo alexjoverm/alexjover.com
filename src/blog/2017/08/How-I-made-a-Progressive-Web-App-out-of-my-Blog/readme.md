@@ -8,11 +8,10 @@ excerpt: >-
   One day I wanted to learn about PWA (Progressive Web App), so I though: What's better than doing it with my own blog?
 date: 2017-08-07 
 layout: Post
+hero: heroes/Post
 ---
 
-# How I made a Progressive Web App out of my Blog
-
-I think that's something developers do: when we wanna learn something, we go and get our hands dirty, right?
+I think that's something developers do: when we want to learn something, we go and get our hands dirty, right?
 
 The first thing I wanted was to get **metrics and insights** on the blog at that point. For that I used [Lighthouse](https://github.com/GoogleChrome/lighthouse) in its Chrome extension version.
 
@@ -80,7 +79,7 @@ As you can see, some platforms have their own meta tags.
 
 Creating a [Service Worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) could be a very tedious job, they're very versatile and allow to do a lot of things.
 
-For most cases, we wanna use them to cache all the static files, so our app can work offline. There are different strategies to do this, they all are explained very well in the [Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/), written by [Jake Archibald](https://twitter.com/jaffathecake) at Google. Another resource worth checking is [serviceworke.rs](https://serviceworke.rs/).
+For most cases, we want to use them to cache all the static files, so our app can work offline. There are different strategies to do this, they all are explained very well in the [Offline Cookbook](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/), written by [Jake Archibald](https://twitter.com/jaffathecake) at Google. Another resource worth checking is [serviceworke.rs](https://serviceworke.rs/).
 
 Still, it's quite some work to create and maintain a Service Worker for this purpose and every project. That's where [sw-precache](https://github.com/GoogleChrome/sw-precache) comes in handy, a tool that automatically creates a pre-cache Service Worker for a set of static assets using the [cache-first](https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network) strategy.
 

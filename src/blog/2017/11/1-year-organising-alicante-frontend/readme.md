@@ -6,9 +6,8 @@ date: 2017-11-21 10:46:07
 tags:
  - Community
 layout: Post
+hero: heroes/Post
 ---
-
-# 1 year Organising Alicante Frontend
 
 <!-- {% asset_img birthday.png "First birthday of Alicante Frontend" %} -->
 

@@ -1,10 +1,12 @@
+@import "./_theme/fonts";
+
 $navbar-height: 2.2rem;
 $navbar-padding-v: $navbar-height / 2;
 // $navbar-padding: $navbar-padding-v $layout-padding;
 
-$navbar-link-font-size: $font-size-base - 0.2;
+$navbar-link-font-size: $font-size-base - 0.05;
 $navbar-link-height: $navbar-padding-v;
 $navbar-link-padding-v: $navbar-padding-v;
 $navbar-link-padding-h: 1.5rem;
 
-$navbar-brand-size: $font-size-base * 1.2;
+$navbar-brand-size: $font-size-base * 1.25;
