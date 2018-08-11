@@ -1,10 +1,9 @@
 const path = require("path");
 
-console.log(path.resolve(__dirname, "theme"));
-
 module.exports = {
   title: "Alex Jover",
   description: "Web and JavaScript",
+  head: [["link", { rel: "icon", href: "/favicon.jpg" }]],
   themeConfig: {
     locales: {
       "/": {

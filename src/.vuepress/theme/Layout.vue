@@ -26,7 +26,7 @@
       <!-- <slot name="top"></slot>
       <slot name="bottom"></slot> -->
       <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre> -->
-      <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre> -->
+      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
     </div>
     <!-- 
     <div class="menu-mask" @click="toggleMenu(false)"></div>
@@ -57,6 +57,11 @@ import Sidebar from "./Sidebar.vue";
 import { kebabCase } from "./util";
 
 export default {
+  metaInfo() {
+    return {
+      meta: [{ vmid: "lala", name: "lala", content: "" }]
+    };
+  },
   components: { Navbar, Menu, MenuBackdrop, Sidebar },
   data() {
     return {

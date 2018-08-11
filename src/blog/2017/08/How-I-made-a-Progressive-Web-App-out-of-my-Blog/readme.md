@@ -9,6 +9,17 @@ excerpt: >-
 date: 2017-08-07 
 layout: Post
 hero: heroes/Post
+meta:
+  - property: og:title
+    content: How I made a Progressive Web App out of my Blog
+  - property: og:description
+    content: I wanted to learn about PWA (Progressive Web Apps), so I decided to make this blog a PWA
+  - property: og:image
+    content: /alex.jpg
+  - property: og:url
+    content: /blog/2017/08/How-I-made-a-Progressive-Web-App-out-of-my-Blog/
+  - name: twitter:card
+    content: summary
 ---
 
 I think that's something developers do: when we want to learn something, we go and get our hands dirty, right?

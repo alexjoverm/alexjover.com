@@ -11,7 +11,10 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.9.2",
-    "sass-loader": "^7.0.3",
-    "vuepress": "^0.12.0"
+    "sass-loader": "^7.1.0",
+    "vuepress": "^0.13.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.17.10"
   }
 }

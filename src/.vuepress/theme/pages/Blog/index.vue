@@ -1,11 +1,9 @@
 <template>
   <div class="blog">
+    <h1>Blog</h1>
     <section class="posts">
-      <input type="text"> <span style="padding: 2rem;"></span>
-      <input class="rounded" type="text"> <br><br>
-
-      <Button> Heyooo  </Button>
-      <br><br>
+      <PostCard :post="post" v-for="post in posts" :key="post.key"/>
+      <PostCard :post="post" v-for="post in posts" :key="post.key"/>
       <PostCard :post="post" v-for="post in posts" :key="post.key"/>
     </section>
   </div>
@@ -31,12 +29,34 @@ export default {
 <style lang="scss" scoped>
 @import "~styles/theme";
 
-.outline {
-  border-radius: 10rem;
+$items-margin: 1.6rem;
 
-  // &:hover {
-  //   background: $navbar-color;
-  //   color: $white-color;
-  // }
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-card {
+  box-sizing: border-box;
+  flex: 0 0 calc(100% - #{$items-margin});
+  margin: ($items-margin / 2) ($items-margin / 2);
+}
+
+@media (min-width: $mq-sm) {
+  .post-card {
+    flex: 0 0 calc(50% - #{$items-margin});
+  }
+}
+
+@media (min-width: $mq-md) {
+  .post-card {
+    flex: 0 0 calc(33% - #{$items-margin});
+  }
+}
+
+@media (min-width: $mq-lg) {
+  .post-card {
+    flex: 0 0 calc(25% - #{$items-margin});
+  }
 }
 </style>
