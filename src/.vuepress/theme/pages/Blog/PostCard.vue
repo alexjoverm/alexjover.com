@@ -6,9 +6,6 @@
     <div class="post-card-excerpt">
       {{ post.frontmatter.excerpt }}      
     </div>
-    <footer class="post-card-footer">
-      Posted on {{ $formatDate(post.frontmatter.date) }}
-    </footer>
   </router-link>
 </template>
 
@@ -23,15 +20,15 @@ export default {
 
 .post-card {
   box-shadow: 0 1px 5px $gray-lighter;
-  padding: 2.1rem;
-  text-align: center;
+  padding: 1.9rem;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 3px;
 
   :not(.post-card-title) {
-    color: $text-color;
+    color: $text-color-light;
   }
 
   &:hover,
@@ -40,9 +37,15 @@ export default {
   }
 }
 
+.post-card-excerpt {
+  font-size: 1.6rem;
+}
+
 .post-card-title {
   color: $accent-color;
   margin-top: 0;
+  margin-bottom: 1.7rem;
+  line-height: 2.5rem;
 }
 </style>
 
