@@ -18,6 +18,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
+        "@": path.resolve(__dirname, "theme"),
         styles: path.resolve(__dirname, "theme", "styles")
       }
     }

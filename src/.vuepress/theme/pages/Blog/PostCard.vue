@@ -14,7 +14,7 @@ export default {
   props: ["post"]
 };
 </script>
-
+ 
 <style lang="scss" scoped>
 @import "~styles/theme";
 

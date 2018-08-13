@@ -1,9 +1,6 @@
 <template>
   <div class="blog">
-    <h1>Blog</h1>
     <section class="posts">
-      <PostCard :post="post" v-for="post in posts" :key="post.key"/>
-      <PostCard :post="post" v-for="post in posts" :key="post.key"/>
       <PostCard :post="post" v-for="post in posts" :key="post.key"/>
     </section>
   </div>
@@ -34,6 +31,7 @@ $items-margin: 1.6rem;
 .posts {
   display: flex;
   flex-wrap: wrap;
+  padding: $layout-padding 0;
 }
 
 .post-card {
