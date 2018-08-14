@@ -1,7 +1,7 @@
 <template>
-  <BaseHero class="blog-hero">
+  <BaseHero centered>
     <h1 class="hero-title">Alex's Blog</h1>
-    <h4 class="hero-subtitle">I love writting articles and tutorials about Vue, JS, PWA and Web Performance</h4>
+    <h4 class="hero-subtitle">I love writing articles and tutorials about Vue, JS, PWA and Web Performance</h4>
   </BaseHero>
 </template>
 
@@ -12,10 +12,4 @@ export default {
   components: { BaseHero }
 };
 </script>
-
-<style lang="scss" scoped>
-.blog-hero {
-  text-align: center;
-}
-</style>
 

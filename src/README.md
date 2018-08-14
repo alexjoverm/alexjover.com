@@ -1,5 +1,3 @@
 ---
-
+hero: heroes/Home
 ---
-
-Home

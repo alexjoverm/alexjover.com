@@ -1,16 +1,43 @@
 <template>
-  <div class="hero">
+  <div class="hero" :style="styles" :class="classes">
     <div class="wrapper">
       <slot></slot>
     </div>
   </div>
 </template>
 
+<script>
+export default {
+  props: {
+    centered: Boolean,
+    image: String
+  },
+  computed: {
+    classes() {
+      return {
+        "text-center": this.centered,
+        "with-image": this.image
+      };
+    },
+    styles() {
+      const styles = {};
+      if (this.image) {
+        styles.backgroundImage = `url(${this.image})`;
+      }
+      return styles;
+    }
+  }
+};
+</script>
+
+
 <style lang="scss" scoped>
 @import "~styles/theme";
 
 .hero {
-  background: $navbar-color;
+  background-image: $navbar-color;
+  background-repeat: no-repeat;
+  background-position: center;
   flex: 1;
   display: flex;
   // text-align: center;
@@ -18,6 +45,14 @@
   align-items: center;
 
   color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+  &.with-image {
+    .wrapper {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
 }
 
 .wrapper {
