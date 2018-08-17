@@ -15,13 +15,11 @@
         <MenuBackdrop v-show="isMenuOpen" @toggle-menu="toggleMenu(false)"/>
       </div>
 
-      <div class="content-container">
-        <main class="page-content">
-          <component :is="pageComponent"></component>
-        </main>
-
-        <Sidebar v-if="shouldShowSidebar"/>
-      </div>
+      <main class="page-content">
+        <component :is="pageComponent">
+          <Sidebar slot="sidebar" v-if="shouldShowSidebar"/>
+        </component>
+      </main>
 
       <!-- <slot name="top"></slot>
       <slot name="bottom"></slot> -->
@@ -194,16 +192,7 @@ export default {
   padding-top: 0;
 }
 
-.content-container {
-  display: flex;
-}
-
 .hero-container {
   display: flex;
-}
-
-.page-content {
-  flex: 1;
-  overflow: auto;
 }
 </style>

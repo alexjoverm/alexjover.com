@@ -1,32 +1,23 @@
 <template>
   <div class="blog">
     <section class="posts">
-      <PostCard :post="post" v-for="post in posts" :key="post.key"/>
+      <PostCard :post="post" v-for="post in $posts" :key="post.key"/>
     </section>
   </div>
 </template>
 
 <script>
-import PostCard from "./PostCard";
+import PostCard from "@/PostCard";
 import Button from "../../Button";
 
 export default {
-  components: { PostCard, Button },
-  computed: {
-    posts() {
-      return this.$site.pages.filter(
-        page => page.frontmatter.layout === "Post"
-      );
-    }
-  }
+  components: { PostCard, Button }
 };
 </script>
 
 
 <style lang="scss" scoped>
 @import "~styles/theme";
-
-$items-margin: 1.6rem;
 
 .posts {
   display: flex;

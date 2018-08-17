@@ -26,7 +26,6 @@ $sidebar-margin-md: 60px;
   flex: 0 0 $sidebar-width-sm;
   margin-left: $sidebar-margin-sm;
   // background: yellow;
-  padding-top: $layout-padding;
 }
 
 @media (min-width: $mq-sm) {

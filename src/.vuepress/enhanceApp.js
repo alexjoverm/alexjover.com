@@ -23,6 +23,27 @@ export default ({
     options = { year: "numeric", month: "short", day: "numeric" }
   ) => new Date(date).toLocaleDateString(lang, options);
 
+  Vue.mixin({
+    computed: {
+      $courses() {
+        return this.$site.pages
+          .filter(page => page.frontmatter.type === "course")
+          .sort(
+            (a, b) =>
+              new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+          );
+      },
+      $posts() {
+        return this.$site.pages
+          .filter(page => page.frontmatter.layout === "Post")
+          .sort(
+            (a, b) =>
+              new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
+          );
+      }
+    }
+  });
+
   // siteData.pages.forEach(page => {
   //   const { title, description } = page.frontmatter;
   //   const meta = page.frontmatter.meta || [];

@@ -10,6 +10,10 @@
   outline: inherit;
 }
 
+.no-margin-top {
+  margin-top: 0;
+}
+
 .icon {
   display: inline-block;
   width: 1em;
@@ -21,6 +25,10 @@
 
 .icon.outbound {
   display: none !important;
+}
+
+.rounded {
+  border-radius: 99rem;
 }
 
 .sticky {
