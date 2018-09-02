@@ -1,5 +1,15 @@
 const path = require("path");
 
+class X {
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  }
+
+  set fullName(value) {
+    // ...
+  }
+}
+
 module.exports = {
   title: "Alex Jover",
   description: "Web and JavaScript",

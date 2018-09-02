@@ -34,6 +34,16 @@ $sidebar-margin-md: 60px;
   }
 }
 
+@media (min-width: $mq-sm) and (max-width: $mq-sm-max) {
+  /deep/ .subscribe-form .submit-button {
+    font-size: 1.5rem;
+  }
+
+  /deep/ .subscribe-form .form-title {
+    font-size: 1.6rem;
+  }
+}
+
 @media (min-width: $mq-md) {
   .sidebar {
     flex: 0 0 $sidebar-width-md;

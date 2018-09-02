@@ -1,6 +1,6 @@
 <template>
-  <router-link class="post-card" :to="post.path">
-    <header>
+  <router-link class="post-card" :class="{ gradient: gradient }" :to="post.path">
+    <header class="post-card-header">
       <h4 class="post-card-title"> {{ post.title }} </h4>
     </header>
     <div class="post-card-excerpt">
@@ -11,21 +11,42 @@
 
 <script>
 export default {
-  props: ["post"]
+  props: {
+    post: Object,
+    gradient: Boolean
+  }
 };
 </script>
  
 <style lang="scss" scoped>
 @import "~styles/theme";
 
+.post-card.gradient {
+  .post-card-header {
+    background-image: $navbar-color;
+  }
+
+  .post-card-title {
+    color: $white-color;
+  }
+}
+
 .post-card {
   box-shadow: 0 1px 5px $gray-lighter;
-  padding: 1.9rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   border-radius: 3px;
+  overflow: hidden;
+
+  .post-card-header {
+    padding: 1.5rem 1.9rem;
+  }
+
+  .post-card-excerpt {
+    padding: 1rem 1.9rem 1.9rem 1.9rem;
+  }
 
   :not(.post-card-title) {
     color: $text-color-light;
@@ -43,8 +64,7 @@ export default {
 
 .post-card-title {
   color: $accent-color;
-  margin-top: 0;
-  margin-bottom: 1.7rem;
+  margin: 0;
   line-height: 2.5rem;
 }
 </style>

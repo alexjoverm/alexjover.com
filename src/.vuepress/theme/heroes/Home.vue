@@ -1,7 +1,7 @@
 <template>
   <BaseHero centered image="/speaking.jpg">
     <img src="/alex.jpg" alt="Alex Jover" class="profile-image rounded">
-    <h1 class="title">Hi, I'm <strong>Alex Jover</strong>!</h1>
+    <h1 class="title"><i>Hi, I'm</i> <strong class="semi-bold">Alex Jover</strong>!</h1>
     <h4 class="subtext">Trainer and developer on Web Technologies loving PWA, Web Performance, JavaScript and Vue.</h4>
     <SocialBadges/>
   </BaseHero>
@@ -35,11 +35,16 @@ $home-hero-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
   .title,
   .subtext {
     font-weight: normal;
+    letter-spacing: 1px;
   }
 
   .title {
-    font-size: 4.2rem;
-    margin-top: 2rem;
+    font-size: 3.5rem;
+    margin-top: 1.3rem;
+  }
+  .subtext {
+    margin: 1rem 0 2.6rem 0;
+    font-size: 1.8rem;
   }
 }
 

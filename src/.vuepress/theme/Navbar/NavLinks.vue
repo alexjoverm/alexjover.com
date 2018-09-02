@@ -74,9 +74,11 @@ export default {
     font-size: $navbar-link-font-size;
     line-height: $navbar-link-height;
     color: $text-inv-color;
+    letter-spacing: 1px;
     text-decoration: none;
     padding: $navbar-link-padding-v $navbar-link-padding-h;
     font-weight: 600;
+    text-transform: uppercase;
 
     &:hover,
     &.router-link-active {

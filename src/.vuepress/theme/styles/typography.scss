@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 @import "./theme";
 
 h1,
@@ -76,13 +76,14 @@ p,
 code {
   background: desaturate(tint($code-color, 92%), 30%);
   color: $code-color;
-  border-radius: 3px;
+  border-radius: $base-border-radius;
   font-size: ($font-size-base + 0.3);
   padding: 1px 4px;
 }
 
 code[class*="language-"],
 pre[class*="language-"] {
+  border-radius: $base-border-radius;
   line-height: $line-height-code;
   margin: $line-height-computed 0;
 
@@ -105,4 +106,8 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.semi-bold {
+  font-weight: 600;
 }

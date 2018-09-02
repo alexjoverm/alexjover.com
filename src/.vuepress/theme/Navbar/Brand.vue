@@ -10,8 +10,10 @@
 .brand-link {
   font-size: $navbar-brand-size;
   line-height: 2.8rem;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: 2px;
   color: $text-inv-color;
   text-decoration: none;
+  text-transform: uppercase;
 }
 </style>

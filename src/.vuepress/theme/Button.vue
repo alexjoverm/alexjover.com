@@ -7,7 +7,7 @@ export default {
   props: {
     rounded: {
       type: Boolean,
-      default: true
+      default: false
     },
     outline: {
       type: Boolean,
@@ -34,6 +34,7 @@ $button-border-width: 2px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
   border: 2px solid transparent;
+  border-radius: $base-border-radius;
 
   &:hover {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);

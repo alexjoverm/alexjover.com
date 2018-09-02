@@ -1,10 +1,10 @@
 <template>
   <form class="subscribe-form" @submit="">
-    <h4 class="form-title">Get the latest content</h4>
+    <h4 class="form-title">GET THE LATEST CONTENT</h4>
     <div class="form-description">Subscribe for upcoming guides, tutorials and courses. No spam.</div>
     <Input class="form-input" v-model="name" placeholder="Name"/>
     <Input class="form-input" type="email" v-model="email" placeholder="Email" required/>
-    <Button type="submit" class="submit-button">I want FREE content</Button>
+    <Button type="submit" class="submit-button">I WANT <b>FREE</b> CONTENT</Button>
   </form>
 </template>
 
@@ -39,6 +39,8 @@ export default {
 
   .form-title {
     margin: 0;
+    font-weight: bold;
+    font-size: 1.7rem;
   }
 
   .form-description {

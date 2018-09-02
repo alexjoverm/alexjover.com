@@ -7,20 +7,24 @@
       </section>
 
       <section class="courses" v-if="$courses.length">
-        <h2 class="section-header">
-          Courses <router-link to="/courses/">See them all</router-link>
-        </h2>
-        <!-- <p class="section-description">I create courses to help you develop your skills. These are my latest pieces of work:</p> -->
+        <header class="section-header">
+          <h2>Courses</h2>
+          <router-link to="/courses/">See them all</router-link>
+        </header>
+
         <div class="posts-container">
           <PostCard :post="post" v-for="post in $posts.slice(0, 3)" :key="post.key"></PostCard>
         </div>
       </section>
 
       <section class="posts" v-if="$posts.length">
-        <h2 class="section-header">Articles <router-link to="/blog/">See them all</router-link></h2>
-        <!-- <p class="section-description">I also write something on my blog from time to time. These are the latest articles: </p> -->
+        <header class="section-header">
+          <h2>Articles</h2>
+          <router-link to="/blog/">See them all</router-link>
+        </header>
+
         <div class="posts-container">
-          <PostCard :post="post" v-for="post in $posts.slice(0, 3)" :key="post.key"></PostCard>
+          <PostCard gradient :post="post" v-for="post in $posts.slice(0, 3)" :key="post.key"></PostCard>
         </div>
       </section>
     </div>
@@ -55,12 +59,25 @@ export default {
 }
 
 .section-header {
-  margin-top: 0;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  align-items: flex-end;
+  justify-content: space-between;
+  display: flex;
+  letter-spacing: 1px;
+
+  h2 {
+    font-size: 2.3rem;
+    margin: 0;
+    // color: $accent-color;
+  }
 
   a {
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
     color: $text-color;
+    text-decoration: underline;
   }
 }
 

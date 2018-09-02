@@ -4,9 +4,9 @@ tags:
   - PWA
   - JavaScript
 description: I wanted to learn about PWA (Progressive Web Apps), so I decided to make this blog a PWA
-excerpt: >- 
+excerpt: >-
   One day I wanted to learn about PWA (Progressive Web App), so I though: What's better than doing it with my own blog?
-date: 2017-08-07 
+date: 2017-08-07
 layout: Post
 hero: heroes/Post
 meta:
@@ -32,7 +32,7 @@ By default, the performance stats were quite good. I wasn't surprised: my blog r
 
 For the PWA metrics, it was half-way, and I've never payed attention to that. Let's see what steps I did to make it 100% a Progressive Web App.
 
-## 1. Create a Web App Manifest and Icons
+## 1. Create a <b>Web App Manifest</b> and Icons
 
 The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) is a JSON file designed to describe a Web Application. This is a excerpt of my `manifest.json`:
 
@@ -64,7 +64,7 @@ Finally, you must include it with a `meta` tag in the [head of the HTML](https:/
 <link rel="manifest" href="/manifest.json">
 ```
 
-### 2. Add meta tags
+## 2. Add meta tags
 
 You need to add [some meta tags](https://developers.google.com/web/fundamentals/design-and-ui/browser-customization/) so all supported browsers would appropriately understand it as a Progressive Web App. The [tags I added](https://github.com/alexjoverm/blog/blob/master/themes/beautiful-hexo/layout/partial/head.jade#L13-L23) are:
 

@@ -27,7 +27,7 @@ input {
   box-shadow: 0 1px 1px $gray-lightest;
   padding: 0.6rem 1.8rem;
   transition: border 0.2s ease, box-shadow 0.2s ease;
-  border-radius: 3px;
+  border-radius: $base-border-radius;
 
   &:focus {
     box-shadow: 0 1px 1px #ddd;
