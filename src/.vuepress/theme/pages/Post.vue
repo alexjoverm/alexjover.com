@@ -43,5 +43,31 @@
     max-width: 100%;
     margin: 0 auto;
   }
+
+  blockquote {
+    position: relative;
+    font-style: italic;
+    padding: 15px 20px 15px 40px;
+    background: $gray-lightest-plus;
+
+    &:before {
+      content: "\201C"; /*Unicode for Left Double Quote*/
+
+      /*Font*/
+      font-family: Georgia, serif;
+      font-size: 55px;
+      font-weight: bold;
+      color: $gray-light;
+
+      /*Positioning*/
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    > p:last-child {
+      margin: 0;
+    }
+  }
 }
 </style>

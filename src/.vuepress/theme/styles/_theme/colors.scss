@@ -3,12 +3,16 @@ $accent-color: #26a683;
 $complement-color: complement($accent-color);
 
 $white-color: #fff;
+$gray-lightest-plus: #f8f8f8;
 $gray-lightest: #eee;
 $gray-lighter: #ccc;
+$gray-light: #aaa;
+$gray: #888;
 
 // Text
 $text-color: #3e4850;
 $text-color-light: lighten($text-color, 20%);
+$text-color-lighter: lighten($text-color, 30%);
 $text-inv-color: $white-color;
 
 $background-color: $white-color;

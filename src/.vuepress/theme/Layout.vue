@@ -23,7 +23,7 @@
 
       <!-- <slot name="top"></slot>
       <slot name="bottom"></slot> -->
-      <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre> -->
+      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
       <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
     </div>
     <!-- 
