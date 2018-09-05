@@ -7,7 +7,7 @@ tags:
   - Apollo
   - VueJS
 excerpt: What could go wrong by building a hackaton project with Apollo, GraphQL, Vue and Nuxt?
-featuredImage: /hackaton.jpg
+featuredImage: /posts/hackaton.jpg
 layout: Post
 hero: heroes/Post
 meta:
@@ -16,7 +16,7 @@ meta:
   - property: og:description
     content: What could go wrong by building a hackaton project with Apollo, GraphQL, Vue and Nuxt?
   - property: og:image
-    content: ./hackaton.jpg
+    content: /posts/hackaton.jpg
   - property: og:url
     content: /blog/2017/03/Apollo-GraphQL-and-Nuxt-shenanigans/
   - name: twitter:card
@@ -35,7 +35,7 @@ You can find the result [project on Github](https://github.com/esclapes/coosto-h
 
 _Note: opinions in the article are personal and based on this experienced_
 
-### GraphQL
+## GraphQL
 
 **[GraphQL](http://graphql.org)** is a query language spec that Facebook developed on 2012. It serves exactly one purpose, and it does it really well:
 
@@ -58,7 +58,7 @@ It is the perfect replacement for traditional homemade BFFs, so you don't have t
 - Define hard-contracts between frontend and backend which you have to maintain (unless you build an spec/convention, which would mean building GraphQL from scratch on your own)
 - Optimize it for the purpose (GraphQL is made for that)
 
-### Apollo
+## Apollo
 
 Here again, the experience was quite positive, it complements GraphQL with everything you need.
 
@@ -72,7 +72,7 @@ One note, the docs were a bit misleading, not by content but more about the stru
 
 We tried [vue-apollo](https://github.com/Akryum/vue-apollo), but we didn't have good experience with it. It is quite opinionated and does some magic, but you lose a lot of control. For our case the [Apollo Javascript client](https://github.com/apollographql/apollo-client) worked better.
 
-### Nuxt
+## Nuxt
 
 We felt the power and easyness of Nuxt, but also we got a sour-sweet experience here, let me elaborate on that.
 

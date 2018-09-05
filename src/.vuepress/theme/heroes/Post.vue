@@ -21,3 +21,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.hero {
+  /deep/ .hero-title {
+    // font-weight: 200;
+  }
+}
+</style>
+

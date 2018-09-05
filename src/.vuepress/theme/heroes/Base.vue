@@ -49,8 +49,8 @@ export default {
 
   &.with-image {
     .wrapper {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
     }
   }
 }
@@ -63,7 +63,7 @@ export default {
 
 .hero-title {
   font-size: 4.3rem;
-  font-weight: 200;
+  font-weight: 500;
   margin-bottom: 2rem;
 }
 
