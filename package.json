@@ -15,6 +15,7 @@
     "vuepress": "^0.14.2"
   },
   "dependencies": {
-    "lodash-es": "^4.17.10"
+    "lodash-es": "^4.17.10",
+    "vue-tweet-embed": "^2.1.2"
   }
 }

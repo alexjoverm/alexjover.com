@@ -17,12 +17,17 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
+  // Utils
   Vue.prototype.$formatDate = (
     date,
     lang = "en-US",
     options = { year: "numeric", month: "short", day: "numeric" }
   ) => new Date(date).toLocaleDateString(lang, options);
 
+  // Components
+  Vue.component("Tweet", () => import("vue-tweet-embed/tweet"));
+
+  // Local data
   Vue.mixin({
     computed: {
       $courses() {

@@ -54,7 +54,7 @@ Let's start with something very simple, later we'll get back to the TypeScript c
 
 The most important part is the `allowSyntheticDefaultImports` setting. Since Vue types doesn't use ES2015 default exports, this setting must be set to by-pass that. You can see more info in [this VSCode docs page](https://code.visualstudio.com/docs/languages/javascript#_common-questions).
 
-Setting `"module": "es2015"` would make the code [tree-shakeable](https://alexjoverm.github.io/2017/03/06/Tree-shaking-with-Webpack-2-TypeScript-and-Babel/) by producing ESM (EcmaScript Modules).
+Setting `"module": "es2015"` would make the code [tree-shakeable](../Tree-shaking-with-Webpack-2-TypeScript-and-Babel/) by producing ESM (EcmaScript Modules).
 
 ### 2. Add `ts-loader` and webpack tweaks
 

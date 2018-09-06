@@ -16,7 +16,7 @@ meta:
   - property: og:image
     content: /posts/happy.jpg
   - property: og:url
-    content: /blog/2017/11/My-tips-to-be-a-happier-developer
+    content: /blog/My-tips-to-be-a-happier-developer
   - name: twitter:card
     content: summary
 ---
