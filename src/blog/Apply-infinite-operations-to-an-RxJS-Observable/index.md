@@ -17,7 +17,7 @@ meta:
   - property: og:image
     content: /posts/rxjs.png
   - property: og:url
-    content: /blog/2017/08/Apply-infinite-operations-to-an-RxJS-Observable/
+    content: /blog/Apply-infinite-operations-to-an-RxJS-Observable/
   - name: twitter:card
     content: summary
 ---

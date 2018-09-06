@@ -15,7 +15,7 @@ meta:
   - property: og:image
     content: /alex.jpg
   - property: og:url
-    content: /blog/2017/11/1-year-organising-alicante-frontend/
+    content: /blog/1-year-organising-alicante-frontend/
   - name: twitter:card
     content: summary
 ---

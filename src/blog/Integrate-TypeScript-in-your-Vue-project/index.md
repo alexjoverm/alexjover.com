@@ -17,7 +17,7 @@ meta:
   - property: og:image
     content: /posts/love.jpg
   - property: og:url
-    content: /blog/2017/06/Integrate-TypeScript-in-your-Vue-project/
+    content: /blog/Integrate-TypeScript-in-your-Vue-project/
   - name: twitter:card
     content: summary
 ---

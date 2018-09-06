@@ -18,7 +18,7 @@ meta:
   - property: og:image
     content: /posts/hackaton.jpg
   - property: og:url
-    content: /blog/2017/03/Apollo-GraphQL-and-Nuxt-shenanigans/
+    content: /blog/Apollo-GraphQL-and-Nuxt-shenanigans/
   - name: twitter:card
     content: summary
 ---

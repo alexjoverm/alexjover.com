@@ -17,7 +17,7 @@ meta:
   - property: og:image
     content: /alex.jpg
   - property: og:url
-    content: /blog/2017/08/How-I-made-a-Progressive-Web-App-out-of-my-Blog/
+    content: /blog/How-I-made-a-Progressive-Web-App-out-of-my-Blog/
   - name: twitter:card
     content: summary
 ---

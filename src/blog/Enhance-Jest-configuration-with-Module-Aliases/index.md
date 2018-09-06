@@ -17,7 +17,7 @@ meta:
   - property: og:image
     content: /alex.jpg
   - property: og:url
-    content: /blog/2017/10/Enhance-Jest-configuration-with-Module-Aliases
+    content: /blog/Enhance-Jest-configuration-with-Module-Aliases
   - name: twitter:card
     content: summary
 ---
