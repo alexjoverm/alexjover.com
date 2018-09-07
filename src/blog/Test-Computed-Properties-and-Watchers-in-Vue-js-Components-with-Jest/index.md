@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 Computed properties and watchers are reactive parts of the logic of Vue.js components. They both serve totally different purposes, one is synchronous and the other asynchronous, which makes them behave slightly different.
 
 In this article we'll go through testing them and see what different cases we can find on the way.

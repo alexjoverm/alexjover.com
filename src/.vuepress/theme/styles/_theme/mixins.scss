@@ -1,0 +1,9 @@
+@mixin box-color($color, $shade: 0%) {
+  color: shade($color, $shade);
+  border-color: $color;
+  background: tint($color, 90%);
+
+  a {
+    color: shade($color, $shade);
+  }
+}

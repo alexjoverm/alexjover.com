@@ -42,6 +42,9 @@ $headings-font-weight: 600;
 $headings-line-height: 1.3;
 $headings-color: inherit;
 
+$text-margin-down: $line-height-computed * $text-margin-factor;
+$text-margin: 0 0 $line-height-computed * $text-margin-factor;
+
 // code
 // $line-numbers-width: 3.5rem;
 $line-height-code: 2.2rem;

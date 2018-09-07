@@ -8,10 +8,10 @@
 
 <script>
 import PostCard from "@/PostCard";
-import Button from "../../Button";
+// import Button from "../../Button";
 
 export default {
-  components: { PostCard, Button }
+  components: { PostCard }
 };
 </script>
 

@@ -10,10 +10,9 @@
 
 <script>
 import Input from "./Input";
-import Button from "./Button";
 
 export default {
-  components: { Input, Button },
+  components: { Input },
   data: () => ({
     name: "",
     email: ""
