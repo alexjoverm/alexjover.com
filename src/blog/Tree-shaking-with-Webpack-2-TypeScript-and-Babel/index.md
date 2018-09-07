@@ -30,7 +30,7 @@ Some time ago I updated [typescript-library-starter](https://github.com/alexjove
 
 Right now it uses RollupJS, but same concepts apply. So I thought, why not sharing that to the people? Hope you find it useful and safes you some time I had to spend :)
 
-## What is really tree-shaking?
+## What is really <b>tree-shaking</b>?
 
 Tree shaking is an algorithm introduced first by [RollupJS](http://rollupjs.org/) and also implemented by [Webpack 2](https://webpack.js.org/guides/tree-shaking) that removes any unused code when bundling your code. It relies on ES2015 modules in order to achieve that.
 

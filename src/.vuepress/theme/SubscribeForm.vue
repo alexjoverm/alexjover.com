@@ -1,5 +1,5 @@
 <template>
-  <form class="subscribe-form" @submit="">
+  <form class="subscribe-form" @submit="$emit('submit', $event)">
     <h4 class="form-title">GET THE LATEST CONTENT</h4>
     <div class="form-description">Subscribe for upcoming guides, tutorials and courses. No spam.</div>
     <Input class="form-input" v-model="name" placeholder="Name"/>

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "lodash-es": "^4.17.10",
+    "vue-analytics": "^5.16.0",
     "vue-tweet-embed": "^2.1.2"
   }
 }

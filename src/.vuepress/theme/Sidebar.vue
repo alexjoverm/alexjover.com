@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <SubscribeForm/>
+    <SubscribeForm @submit.prevent="$ga.event('Subscribe', 'Submit', 'Sidebar')"/>
   </div>
 </template>
 

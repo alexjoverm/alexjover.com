@@ -21,11 +21,15 @@
         </component>
       </main>
 
-      <!-- <slot name="top"></slot>
-      <slot name="bottom"></slot> -->
-      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
-      <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
+      <!-- 
+        <slot name="top"></slot>
+        <slot name="bottom"></slot>
+      -->
     </div>
+
+    <Footer/>
+    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
+    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
     <!-- 
     <div class="menu-mask" @click="toggleMenu(false)"></div>
     <Menu :items="menuItems" @toggle-menu="toggleMenu">
@@ -48,6 +52,7 @@ import Vue from "vue";
 import nprogress from "nprogress";
 // import Home from './Home.vue'
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 // import Page from "./Page.vue";
 import Menu from "./Menu.vue";
 import MenuBackdrop from "./MenuBackdrop.vue";
@@ -60,7 +65,7 @@ export default {
       meta: [{ vmid: "lala", name: "lala", content: "" }]
     };
   },
-  components: { Navbar, Menu, MenuBackdrop, Sidebar },
+  components: { Footer, Navbar, Menu, MenuBackdrop, Sidebar },
   data() {
     return {
       isMenuOpen: false

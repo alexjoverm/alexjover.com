@@ -1,9 +1,9 @@
 <template>
-  <a :href="badge.link" :alt="badge.name">
+  <AppOutboundLink :href="badge.link" :alt="badge.name" target="_blank">
     <BaseIcon>
       <component :is="iconComponent"/>
     </BaseIcon>
-  </a>
+  </AppOutboundLink>
 </template>
 
 <script>

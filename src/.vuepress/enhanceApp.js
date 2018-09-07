@@ -11,6 +11,8 @@
 //   { name: "", content: "summary" }
 // ];
 
+import VueAnalytics from "vue-analytics";
+
 export default ({
   Vue,
   options, // the options for the root Vue instance
@@ -23,6 +25,20 @@ export default ({
     lang = "en-US",
     options = { year: "numeric", month: "short", day: "numeric" }
   ) => new Date(date).toLocaleDateString(lang, options);
+
+  Vue.use(VueAnalytics, {
+    id: "UA-93226517-1",
+    router,
+    debug: {
+      enabled: true,
+      trace: false,
+      sendHitTask: false
+    },
+    autoTracking: {
+      exception: true,
+      exceptionLogs: false
+    }
+  });
 
   // Components
   Vue.component("Tweet", () => import("vue-tweet-embed/tweet"));
