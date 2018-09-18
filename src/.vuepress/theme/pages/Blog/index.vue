@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import PostCard from "@/PostCard";
+import PostCard from "@/ui/PostCard";
 // import Button from "../../Button";
 
 export default {

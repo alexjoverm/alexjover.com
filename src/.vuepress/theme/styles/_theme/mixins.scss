@@ -7,3 +7,10 @@
     color: shade($color, $shade);
   }
 }
+
+@mixin ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}

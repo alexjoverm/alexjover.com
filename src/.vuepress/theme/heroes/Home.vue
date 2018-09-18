@@ -9,7 +9,7 @@
 
 <script>
 import BaseHero from "./Base";
-import SocialBadges from "@/SocialBadges";
+import SocialBadges from "@/ui/SocialBadges";
 
 export default {
   components: { BaseHero, SocialBadges }

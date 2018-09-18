@@ -1,9 +1,20 @@
 <template>
   <div class="post">
-    <Content/>
+    <div class="content-wrapper">
+      <Content/>
+      <PrevNextLinks/>
+    </div>
     <slot name="sidebar"/>
   </div>
 </template>
+
+<script>
+import PrevNextLinks from "./PrevNextLinks";
+export default {
+  components: { PrevNextLinks }
+};
+</script>
+
 
 <style lang="scss" scoped>
 @import "~styles/theme";
@@ -12,9 +23,13 @@
   display: flex;
   padding-top: $layout-padding;
 
-  .content {
-    overflow: auto;
-  }
+  // .content {
+  //   overflow: auto;
+  // }
+}
+
+.content-wrapper {
+  overflow: auto;
 }
 </style>
 

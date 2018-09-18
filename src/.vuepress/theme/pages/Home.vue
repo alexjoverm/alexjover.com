@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import PostCard from "@/PostCard.vue";
+import PostCard from "@/ui/PostCard.vue";
 
 export default {
   components: { PostCard }

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SubscribeForm from "./SubscribeForm";
+import SubscribeForm from "@/ui/SubscribeForm";
 
 export default {
   components: { SubscribeForm }
