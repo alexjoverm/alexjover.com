@@ -21,7 +21,6 @@ export default {
 
 $badge-color: $white-color;
 $badge-background: $navbar-color;
-$home-hero-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
 
 .hero {
   position: relative;
@@ -50,11 +49,7 @@ $home-hero-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
 
 .profile-image {
   width: 110px;
-  // position: absolute;
-  // left: 50%;
-  // top: 3rem;
-  // transform: translateX(-50%);
-  box-shadow: $home-hero-shadow;
+  box-shadow: $images-shadow;
 }
 
 .social-badges {
@@ -68,7 +63,7 @@ $home-hero-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
     height: 4rem;
     font-size: 2.3rem;
     line-height: 4.5rem;
-    box-shadow: $home-hero-shadow;
+    box-shadow: $images-shadow;
   }
 }
 </style>

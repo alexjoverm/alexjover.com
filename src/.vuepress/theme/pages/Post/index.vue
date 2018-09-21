@@ -3,6 +3,7 @@
     <div class="content-wrapper">
       <Content/>
       <PrevNextLinks/>
+      <AboutAuthor/>
     </div>
     <slot name="sidebar"/>
   </div>
@@ -10,8 +11,10 @@
 
 <script>
 import PrevNextLinks from "./PrevNextLinks";
+import AboutAuthor from "./AboutAuthor";
+
 export default {
-  components: { PrevNextLinks }
+  components: { PrevNextLinks, AboutAuthor }
 };
 </script>
 

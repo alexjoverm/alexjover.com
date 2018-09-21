@@ -33,7 +33,6 @@ $button-border-width: 2px;
   transition: box-shadow 0.2s ease, transform 0.2s ease;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   box-sizing: border-box;
-  border: 2px solid transparent;
   border-radius: $base-border-radius;
 
   &:hover {
