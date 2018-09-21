@@ -5,6 +5,7 @@
       <PrevNextLinks/>
       <AboutAuthor/>
     </div>
+    <SubscribeModal v-show="modalOpen" @close="modalOpen = false"/>
     <slot name="sidebar"/>
   </div>
 </template>
@@ -12,9 +13,13 @@
 <script>
 import PrevNextLinks from "./PrevNextLinks";
 import AboutAuthor from "./AboutAuthor";
+import SubscribeModal from "@/modals/SubscribeModal";
 
 export default {
-  components: { PrevNextLinks, AboutAuthor }
+  components: { PrevNextLinks, AboutAuthor, SubscribeModal },
+  data: () => ({
+    modalOpen: true
+  })
 };
 </script>
 
