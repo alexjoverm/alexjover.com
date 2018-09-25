@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <div class="post" ref="post">
     <div class="content-wrapper">
       <Content/>
       <PrevNextLinks/>
@@ -11,15 +11,40 @@
 </template>
 
 <script>
+import debounce from "lodash/debounce";
 import PrevNextLinks from "./PrevNextLinks";
 import AboutAuthor from "./AboutAuthor";
 import SubscribeModal from "@/modals/SubscribeModal";
 
+const duration = 20 * 24 * 60 * 60 * 1000; // 20 days
+const isExpired = date => new Date() - date > duration;
+
+const checkShowFormNeeded = () => {
+  const date = localStorage.getItem("blog_subscribeModalDate");
+  return !!!date && isExpired(new Date(date));
+};
+
 export default {
   components: { PrevNextLinks, AboutAuthor, SubscribeModal },
   data: () => ({
-    modalOpen: true
-  })
+    modalOpen: false
+  }),
+  methods: {
+    handleScroll: debounce(function() {
+      const scroll = window.scrollY;
+      const height = this.$refs.post.clientHeight;
+      if (scroll > height / 2.5 && checkShowFormNeeded()) {
+        this.modalOpen = true;
+        // localStorage.setItem("blog_subscribeModalDate", new Date());
+      }
+    }, 400)
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
 };
 </script>
 

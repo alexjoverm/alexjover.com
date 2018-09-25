@@ -1,11 +1,13 @@
 <template>
-  <BaseModal @close="$emit('close')">
-    <img class="profile-image rounded" src="/alex.jpg" alt="Alex Jover">
-    <p>Hey! Do you like this post? I have more to share with you. Please subscribe and you'll receive all content I publish out there. No spam.</p>
-    <SubscribeFormBase>
-      <div slot="header"></div>
-    </SubscribeFormBase>
-  </BaseModal>
+  <transition name="modal-fade">
+    <BaseModal @close="$emit('close')">
+      <img class="profile-image rounded" src="/alex.jpg" alt="Alex Jover">
+      <p>Hey! Do you like this post? I have more to share with you. Please subscribe and you'll receive all content I publish out there. No spam.</p>
+      <SubscribeFormBase>
+        <div slot="header"></div>
+      </SubscribeFormBase>
+    </BaseModal>
+  </transition>
 </template>
 
 <script>
@@ -37,6 +39,16 @@ export default {
 
 .submit-button {
   width: 100%;
+}
+
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.modal-fade-enter,
+.modal-fade-leave-to {
+  opacity: 0;
 }
 </style>
 

@@ -1,32 +1,30 @@
 <template>
-  <transition name="modal-fade">
-    <div class="modal-container">
-      <div class="modal-backdrop" @click="$emit('close')"></div>
+  <div class="modal-container">
+    <div class="modal-backdrop" @click="$emit('close')"></div>
 
-      <div class="modal" role="dialog" :aria-labelledby="titledBy" :aria-describedby="describedBy">
-        <button class="btn-close" @click="$emit('close')" aria-label="Close modal">x</button>
-        <div class="modal-content">
-          <header class="modal-header" :id="titledBy">
-            <slot name="header"></slot>
-          </header>
-          <section class="modal-body" :id="describedBy">
-            <slot>
-              I'm the default body!
-            </slot>
-          </section>
-          <!-- <footer class="modal-footer">
-            <slot name="footer">
-              I'm the default footer!
+    <div class="modal" role="dialog" :aria-labelledby="titledBy" :aria-describedby="describedBy">
+      <button class="btn-close" @click="$emit('close')" aria-label="Close modal">x</button>
+      <div class="modal-content">
+        <header class="modal-header" :id="titledBy">
+          <slot name="header"></slot>
+        </header>
+        <section class="modal-body" :id="describedBy">
+          <slot>
+            I'm the default body!
+          </slot>
+        </section>
+        <!-- <footer class="modal-footer">
+          <slot name="footer">
+            I'm the default footer!
 
-              <button type="button" class="btn-green" @click="close" aria-label="Close modal">
-                Close me!
-              </button>
-            </slot>
-          </footer> -->
-        </div>
+            <button type="button" class="btn-green" @click="close" aria-label="Close modal">
+              Close me!
+            </button>
+          </slot>
+        </footer> -->
       </div>
     </div>
-  </transition>
+  </div>
 </template>
 
 <script>
