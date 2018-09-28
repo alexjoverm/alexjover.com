@@ -1,9 +1,10 @@
 <template>
-  <BaseHero centered image="/speaking.jpg">
-    <img src="/alex.jpg" alt="Alex Jover" class="profile-image rounded">
-    <h1 class="title"><i>Hi, I'm</i> <strong class="semi-bold">Alex Jover</strong>!</h1>
-    <h4 class="subtext">Trainer and developer on Web Technologies loving PWA, Web Performance, JavaScript and Vue.</h4>
-    <SocialBadges/>
+  <BaseHero centered image="/home.jpg">
+    <div class="home-hero-content">
+      <h1 class="title"><i>Hi, I'm</i> <strong class="semi-bold">Alex Jover</strong>!</h1>
+      <h4 class="subtext">A Web Developer with a passion for creating courses and training teams</h4>
+      <SocialBadges/>
+    </div>
   </BaseHero>
 </template>
 
@@ -22,13 +23,15 @@ export default {
 $badge-color: $white-color;
 $badge-background: $navbar-color;
 
-.hero {
+.hero.with-image {
   position: relative;
+  background-size: 230%;
+  background-position: top center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
 
-  &.with-image /deep/ .wrapper {
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-    // padding-top: 11rem;
+  /deep/ .wrapper {
+    display: flex;
+    justify-content: center;
   }
 
   .title,
@@ -38,18 +41,20 @@ $badge-background: $navbar-color;
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: 4.1rem;
     margin-top: 1.3rem;
   }
   .subtext {
     margin: 1rem 0 2.6rem 0;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
+    line-height: 3.4rem;
   }
 }
 
-.profile-image {
-  width: 110px;
-  box-shadow: $images-shadow;
+.home-hero-content {
+  flex: 0 0 100%;
+  // padding: 3rem;
+  // background: rgba(0, 0, 0, 0.2);
 }
 
 .social-badges {
@@ -64,6 +69,51 @@ $badge-background: $navbar-color;
     font-size: 2.3rem;
     line-height: 4.5rem;
     box-shadow: $images-shadow;
+  }
+}
+
+@media (min-width: 650px) {
+  .hero.with-image {
+    background-size: 110%;
+  }
+}
+
+@media (min-width: 550px) {
+  .hero.with-image {
+    background-size: 180%;
+  }
+}
+
+@media (min-width: 450px) {
+  .hero.with-image {
+    .title {
+      font-size: 4.8rem;
+    }
+    .subtext {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+@media (min-width: $mq-md) {
+  .hero.with-image {
+    background-size: 100%;
+    background-position: left center;
+  }
+
+  .home-hero-content {
+    flex-basis: 55%;
+  }
+  .hero.with-image /deep/ .wrapper {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: $mq-xl) {
+  .hero.with-image {
+    /deep/ .wrapper {
+      padding-bottom: 14rem;
+      padding-top: 14rem;
+    }
   }
 }
 </style>

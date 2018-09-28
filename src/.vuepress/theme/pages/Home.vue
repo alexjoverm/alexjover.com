@@ -13,7 +13,7 @@
         </header>
 
         <div class="posts-container">
-          <PostCard :post="post" v-for="post in $posts.slice(0, 3)" :key="post.key"></PostCard>
+          <!-- <PostCard :post="post" v-for="post in $posts.slice(0, 3)" :key="post.key"></PostCard> -->
         </div>
       </section>
 

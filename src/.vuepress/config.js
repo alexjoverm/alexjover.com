@@ -19,8 +19,8 @@ module.exports = {
       "/": {
         sidebar: ["/", "/ham", "/caca/"],
         nav: [
-          { text: "Blog", link: "/blog/" },
-          { text: "Courses", link: "/courses" }
+          { text: "Blog", link: "/blog/" }
+          // { text: "Courses", link: "/courses" }
         ]
       }
     },

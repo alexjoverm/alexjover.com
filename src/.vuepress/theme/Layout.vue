@@ -56,7 +56,7 @@ import Footer from "./Footer";
 // import Page from "./Page.vue";
 import Menu from "./Menu.vue";
 import MenuBackdrop from "./MenuBackdrop.vue";
-import Sidebar from "./Sidebar.vue";
+import Sidebar from "./Sidebar";
 import { kebabCase } from "./util";
 
 export default {

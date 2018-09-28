@@ -35,7 +35,7 @@ export default {
       const height = this.$refs.post.clientHeight;
       if (scroll > height / 2.5 && checkShowFormNeeded()) {
         this.modalOpen = true;
-        // localStorage.setItem("blog_subscribeModalDate", new Date());
+        localStorage.setItem("blog_subscribeModalDate", new Date());
       }
     }, 400)
   },

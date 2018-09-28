@@ -1,14 +1,16 @@
 <template>
   <div class="sidebar">
     <SubscribeForm @submit.prevent="$ga.event('Subscribe', 'Submit', 'Sidebar')"/>
+    <SidebarBook />
   </div>
 </template>
 
 <script>
-import SubscribeForm from "@/ui/SubscribeForm";
+import SubscribeForm from "./SubscribeForm";
+import SidebarBook from "./SidebarBook";
 
 export default {
-  components: { SubscribeForm }
+  components: { SubscribeForm, SidebarBook }
 };
 </script>
 
@@ -26,6 +28,29 @@ $sidebar-margin-md: 60px;
   flex: 0 0 $sidebar-width-sm;
   margin-left: $sidebar-margin-sm;
   // background: yellow;
+
+  .sidebar-item {
+    margin-bottom: 3.5rem;
+  }
+
+  /deep/ {
+    .sidebar-item-title {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+
+    .sidebar-item-description {
+      @include small-text;
+      margin: 1.2rem 0;
+    }
+
+    .sidebar-item-image {
+      display: block;
+      margin: 1.2rem auto;
+      max-width: 85%;
+    }
+  }
 }
 
 @media (min-width: $mq-sm) {
