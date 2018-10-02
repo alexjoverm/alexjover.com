@@ -156,7 +156,6 @@ export default {
 
   methods: {
     toggleMenu(to) {
-      console.log("toggle");
       this.isMenuOpen = typeof to === "boolean" ? to : !this.isMenuOpen;
     },
     // side swipe

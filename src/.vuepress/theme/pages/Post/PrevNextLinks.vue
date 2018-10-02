@@ -2,12 +2,12 @@
   <section class="prev-next-links">
     <div class="links-wrapper">
       <router-link v-if="prev" class="prev" :to="prev.path">
-        <BaseIcon><ChevronLeft/></BaseIcon>
+        <BaseIcon iconName="chevron-left"><ChevronLeft/></BaseIcon>
         <div class="link-text">{{ prev.title }}</div>
       </router-link>
       <router-link v-if="next" class="next" :to="next.path">
         <div class="link-text">{{ next.title }}</div>
-        <BaseIcon><ChevronRight/></BaseIcon>
+        <BaseIcon iconName="chevron-right"><ChevronRight/></BaseIcon>
       </router-link>
     </div>
   </section>

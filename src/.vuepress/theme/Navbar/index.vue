@@ -44,6 +44,7 @@ export default {
 .title-side {
   width: 16rem;
   display: flex;
+  align-items: center;
 }
 
 .nav-side {

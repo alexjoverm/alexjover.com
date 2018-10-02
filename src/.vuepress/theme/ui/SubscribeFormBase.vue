@@ -1,12 +1,13 @@
 <template>
-  <form class="subscribe-form" @submit="$emit('submit', $event)">
+  <form class="subscribe-form" @submit="$ga.event('Subscribe Form', 'Submit', formLocation)" action="https://github.us16.list-manage.com/subscribe/post?u=534e314884644825b957a5eee&amp;id=e05e60374d" method="post" name="mc-embedded-subscribe-form" target="_blank">
     <slot name="header">
       <h4 class="form-title">GET THE LATEST CONTENT</h4>
       <p>Subscribe for upcoming guides, tutorials and courses. No spam.</p>
     </slot>
+
     <div class="form-container">
-      <Input class="name-input" v-model="name" placeholder="Name"/>
-      <Input class="email-input" v-model="email" type="email" placeholder="Email" required/>
+      <Input class="name-input" name="FNAME" placeholder="Name" aria-label="Name"/>
+      <Input class="email-input" name="EMAIL" type="email" placeholder="Email" required aria-label="Email" autocapitalize="off" autocorrect="off"/>
     </div>
     <Button type="submit" class="submit-button">
       <slot name="submit-button">I WANT <b>FREE</b> CONTENT</slot>
@@ -19,11 +20,17 @@
 import Input from "@/ui/Input";
 
 export default {
+  props: {
+    formLocation: {
+      type: String,
+      default: 'Somewhere'
+    }
+  },
   components: { Input },
-  data: () => ({
-    name: "",
-    email: ""
-  })
+  // data: () => ({
+  //   name: "",
+  //   email: ""
+  // })
 };
 </script>
 

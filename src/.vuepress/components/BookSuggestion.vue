@@ -44,6 +44,9 @@
 
     a {
       color: white;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

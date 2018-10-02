@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 The module managers we have in the JavaScript community, mainly ES Modules and CommonJS, don't support project-based paths. They only support relative paths for our own modules, and paths for the `node_modules` folder. When a project grows a bit, it's common to see paths such:
 
 ```javascript

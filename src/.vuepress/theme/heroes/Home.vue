@@ -116,6 +116,13 @@ $badge-background: $navbar-color;
     }
   }
 }
+
+@media (max-width: 388px) {
+  .hero.with-image {
+    background-size: cover;
+    background-position: 70% 0%;
+  }
+}
 </style>
 
 

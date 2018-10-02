@@ -1,6 +1,6 @@
 <template>
   <AppOutboundLink :href="badge.link" :alt="badge.name" target="_blank">
-    <BaseIcon>
+    <BaseIcon :iconName="badge.name">
       <component :is="iconComponent"/>
     </BaseIcon>
   </AppOutboundLink>

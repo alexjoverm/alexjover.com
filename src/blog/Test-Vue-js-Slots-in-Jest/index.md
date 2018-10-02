@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 Slots are the way to make content distribution happen in the web components world. Vue.js slots are made following the [Web Component specs](https://github.com/w3c/webcomponents/blob/gh-pages/proposals/Slots-Proposal.md), meaning that if you learn how to use them in Vue.js, that will be useful in the future ;).
 
 They make components structure to be much more flexible, moving the responsibility of managing the state to the parent component. For example, we can have a `List` component, and different kind of item components, such `ListItem` and `ListItemImage`. They'll be used like:

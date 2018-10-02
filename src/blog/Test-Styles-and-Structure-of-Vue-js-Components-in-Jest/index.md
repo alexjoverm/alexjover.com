@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 So far, in the tests we've tested via [Jest Snapshots](https://facebook.github.io/jest/docs/snapshot-testing.html). This is great, but sometimes we wanna assert something more specific.
 
 Although you can access the Vue instance via [`cmp.vm`](https://github.com/alexjoverm/vue-testing-series/blob/master/test/MessageList.test.js#L17), you have a set of utilities at your disposal to make it easier. Let's see what we can do.

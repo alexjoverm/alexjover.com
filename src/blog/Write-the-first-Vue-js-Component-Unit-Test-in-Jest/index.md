@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 [vue-test-utils](https://github.com/vuejs/vue-test-utils), the official VueJS testing library and based on [avoriaz](https://github.com/eddyerburgh/avoriaz), is just around the corner. [@EddYerburgh](https://twitter.com/EddYerburgh) is indeed doing a very good job creating it. It provides all necessary tooling for making easy to write unit test in a VueJS application.
 
 [Jest](https://facebook.github.io/jest), on the other side, is the testing framework developed at Facebook, which makes testing a breeze, with awesome features such as:

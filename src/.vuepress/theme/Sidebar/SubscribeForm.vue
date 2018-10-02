@@ -1,22 +1,17 @@
 <template>
-  <form class="subscribe-form sidebar-item" @submit="$emit('submit', $event)">
-    <h4 class="sidebar-item-title">GET THE LATEST CONTENT</h4>
-    <div class="sidebar-item-description">Subscribe for upcoming guides, tutorials and courses. No spam.</div>
-    <Input class="form-input" v-model="name" placeholder="Name"/>
-    <Input class="form-input" type="email" v-model="email" placeholder="Email" required/>
-    <Button type="submit" class="submit-button">I WANT <b>FREE</b> CONTENT</Button>
-  </form>
+  <SubscribeFormBase formLocation="sidebar">
+    <template slot="header">
+      <h4 class="sidebar-item-title">GET THE LATEST CONTENT</h4>
+      <div class="sidebar-item-description">Subscribe for upcoming guides, tutorials and courses. No spam.</div>
+    </template>
+  </SubscribeFormBase>
 </template>
 
 <script>
-import Input from "@/ui/Input";
+import SubscribeFormBase from "@/ui/SubscribeFormBase";
 
 export default {
-  components: { Input },
-  data: () => ({
-    name: "",
-    email: ""
-  })
+  components: { SubscribeFormBase }
 };
 </script>
 
@@ -24,16 +19,23 @@ export default {
 @import "~styles/theme";
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
-  // font-size: 0.85em;
+  /deep/ {
+    .form-container {
+      flex-direction: column;
+    }
 
-  .submit-button {
-    margin-top: 1rem;
-  }
+    input:first-child {
+      margin-right: 0;
+    }
 
-  .form-input {
-    font-size: 1.5rem;
+    .submit-button {
+      margin-top: 1rem;
+    }
+
+    .name-input,
+    .email-input {
+      font-size: 1.5rem;
+    }
   }
 }
 </style>

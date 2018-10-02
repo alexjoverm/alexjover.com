@@ -3,7 +3,7 @@
     <BaseModal @close="$emit('close')">
       <img class="profile-image rounded" src="/alex.jpg" alt="Alex Jover">
       <p>Hey! Do you like this post? I have more to share with you. Please subscribe and you'll receive all content I publish out there. No spam.</p>
-      <SubscribeFormBase>
+      <SubscribeFormBase formLocation="post-modal">
         <div slot="header"></div>
       </SubscribeFormBase>
     </BaseModal>
@@ -32,7 +32,7 @@ export default {
 /deep/ .modal {
   max-width: 100%;
   width: 550px;
-  height: 60vh;
+  max-height: 100%;
   border-radius: $base-border-radius;
   justify-content: center;
 }

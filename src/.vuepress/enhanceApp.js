@@ -29,10 +29,8 @@ export default ({
     options = { year: "numeric", month: "short", day: "numeric" }
   ) => new Date(date).toLocaleDateString(lang, options);
 
-  console.log(isClient);
-  console.log(isProd);
-
-  if (isProd && isClient) {
+  // if (isProd && isClient) {
+  if (isClient) {
     Vue.use(VueAnalytics, {
       id: "UA-93226517-1",
       router,

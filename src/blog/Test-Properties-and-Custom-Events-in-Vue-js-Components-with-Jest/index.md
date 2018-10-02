@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 Properties are custom attributes passed from parent to child components. Custom events solve just the opposite, they send data out to the direct parent via an event. They both combined are the wires of interaction and communication in Vue.js components.
 
 In Unit Testing, testing the in and outs (properties and custom events) means to test how a component behaves when it receives and sends out data in isolation. Let's get our hands dirty!

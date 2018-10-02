@@ -22,6 +22,8 @@ meta:
     content: summary
 ---
 
+<BookSuggestion/>
+
 What should we test in methods? That's a question that we had when we started doing unit tests. Everything comes down to **test what that method do, and just that**. This means we need to **avoid calls to any dependency**, so we'll need to mock them.
 
 Let's add a `onSubmit` event to the form in the `Form.vue` component that we created in the [last article](../Test-Computed-Properties-and-Watchers-in-Vue-js-Components-with-Jest/):

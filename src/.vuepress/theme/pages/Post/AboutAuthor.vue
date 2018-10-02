@@ -6,7 +6,7 @@
       <p>Google Dev Expert, Vue team member, cats and dance lover. Find here all my teachings about web development, web performance and more.</p>
     </div>
     <div class="subscribe-form-container">
-      <SubscribeFormBase/>
+      <SubscribeFormBase formLocation="post-about-author"/>
     </div>
   </section>
 </template>
