@@ -7,7 +7,7 @@ tags:
 description: Learn how to use Module Aliases Jest configuration to avoid using relative paths
 excerpt: Learn how to use Module Aliases Jest configuration to avoid using relative paths
 date: 2017-10-07 11:33:20
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

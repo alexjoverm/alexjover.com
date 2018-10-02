@@ -2,7 +2,7 @@
   <BaseHero centered image="/home.jpg">
     <div class="home-hero-content">
       <h1 class="title"><i>Hi, I'm</i> <strong class="semi-bold">Alex Jover</strong>!</h1>
-      <h4 class="subtext">A Web Developer with a passion for creating courses and training teams</h4>
+      <h4 class="subtext">Google Developer Expert and Vue Community Partner with a passion for creating courses and training teams</h4>
       <SocialBadges/>
     </div>
   </BaseHero>

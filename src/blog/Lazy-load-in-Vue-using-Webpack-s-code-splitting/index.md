@@ -9,7 +9,7 @@ tags:
   - Webpack
   - JavaScript
 featuredImage: /posts/axe.jpg
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

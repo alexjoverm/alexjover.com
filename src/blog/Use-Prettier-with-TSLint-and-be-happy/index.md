@@ -6,7 +6,7 @@ date: 2017-06-12 16:36:23
 tags:
   - TypeScript
 featuredImage: /posts/parrot.jpg
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title
@@ -25,7 +25,9 @@ meta:
 
 Recently, [@vjeux](https://twitter.com/Vjeux), one of the authors of Prettier, announced TypeScript support in the following tweet:
 
-<Tweet id="870670634908475392"/>
+<ClientOnly>
+  <Tweet id="870670634908475392"/>
+</ClientOnly>
 
 That's pretty amazing! I've just went and tried it out. I was so impressed by how magic the experience was that I've [completely removed TSLint](https://twitter.com/alexjoverm/status/871765191721197568) from [TypeScript library starter](https://github.com/alexjoverm/typescript-library-starter).
 

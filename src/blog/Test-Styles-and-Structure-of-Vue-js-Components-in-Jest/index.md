@@ -7,7 +7,7 @@ tags:
 description: vue-test-utils provide us with a set of utilities to assert on Vue.js components.
 excerpt: vue-test-utils provide us with a set of utilities to assert on Vue.js components.
 date: 2017-09-04 08:36:01
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

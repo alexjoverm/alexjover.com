@@ -7,7 +7,7 @@ tags:
 description: Learn about testing the Computed Properties and Watchers reactivity in Vue.js
 excerpt: Learn about testing the Computed Properties and Watchers reactivity in Vue.js
 date: 2017-09-18 11:25:20
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

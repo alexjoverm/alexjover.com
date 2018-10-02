@@ -7,7 +7,7 @@ tags:
 description: Learn how to write unit tests for VueJS components with the official tools and the Jest framework.
 excerpt: Learn how to write unit tests for VueJS components with the official tools and the Jest framework.
 date: 2017-08-21 08:25:40
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

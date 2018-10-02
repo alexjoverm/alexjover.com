@@ -7,7 +7,7 @@ tags:
 description: Learn how to test content distributed using slots and named slots.
 excerpt: Learn how to test content distributed using slots and named slots.
 date: 2017-10-02 14:50:49
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

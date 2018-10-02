@@ -35,6 +35,7 @@ export default {
 @import "~styles/theme";
 
 .hero {
+  background-color: $gray-darkest;
   background-image: $navbar-color;
   background-repeat: no-repeat;
   background-position: center;

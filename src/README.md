@@ -1,4 +1,5 @@
 ---
 hero: heroes/Home
-layout: Home
+page: Home
+sidebar: false
 ---

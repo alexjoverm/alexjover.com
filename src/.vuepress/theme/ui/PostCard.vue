@@ -39,6 +39,7 @@ export default {
   justify-content: space-around;
   border-radius: 3px;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
 
   .post-card-header {
     padding: 1.5rem 1.9rem;
@@ -55,6 +56,8 @@ export default {
   &:hover,
   &:focus {
     text-decoration: none;
+    transform: translateY(-3px);
+    background: $gray-lightest-plus;
   }
 }
 

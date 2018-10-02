@@ -19,6 +19,9 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
+  const isClient = typeof window !== "undefined";
+  const isProd = process.env.NODE_ENV === "production";
+
   // Utils
   Vue.prototype.$formatDate = (
     date,
@@ -26,19 +29,24 @@ export default ({
     options = { year: "numeric", month: "short", day: "numeric" }
   ) => new Date(date).toLocaleDateString(lang, options);
 
-  Vue.use(VueAnalytics, {
-    id: "UA-93226517-1",
-    router,
-    debug: {
-      enabled: true,
-      trace: false,
-      sendHitTask: false
-    },
-    autoTracking: {
-      exception: true,
-      exceptionLogs: false
-    }
-  });
+  console.log(isClient);
+  console.log(isProd);
+
+  if (isProd && isClient) {
+    Vue.use(VueAnalytics, {
+      id: "UA-93226517-1",
+      router,
+      debug: {
+        enabled: !isProd,
+        trace: false,
+        sendHitTask: false
+      },
+      autoTracking: {
+        exception: true,
+        exceptionLogs: false
+      }
+    });
+  }
 
   // Components
   Vue.component("Tweet", () => import("vue-tweet-embed/tweet"));
@@ -56,7 +64,7 @@ export default ({
       },
       $posts() {
         return this.$site.pages
-          .filter(page => page.frontmatter.layout === "Post")
+          .filter(page => page.frontmatter.page === "Post")
           .sort(
             (a, b) =>
               new Date(b.frontmatter.date) - new Date(a.frontmatter.date)
@@ -79,5 +87,5 @@ export default ({
   //   console.log(page.frontmatter.meta);
   // });
 
-  console.log(siteData.pages);
+  // console.log(siteData.pages);
 };

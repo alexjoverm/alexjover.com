@@ -28,8 +28,8 @@
     </div>
 
     <Footer/>
-    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
-    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>
+    <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
+    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre> -->
     <!-- 
     <div class="menu-mask" @click="toggleMenu(false)"></div>
     <Menu :items="menuItems" @toggle-menu="toggleMenu">
@@ -80,10 +80,10 @@ export default {
       };
     },
     pageSlug() {
-      return `page-${kebabCase(this.$page.frontmatter.layout || "Post")}`;
+      return `page-${kebabCase(this.$page.frontmatter.page || "Post")}`;
     },
     pageComponent() {
-      const comp = this.$page.frontmatter.layout || "Post";
+      const comp = this.$page.frontmatter.page || "Post";
       return () => import(`./pages/${comp}`);
     },
     heroComponent() {

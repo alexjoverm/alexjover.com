@@ -7,7 +7,7 @@ date: 2017-03-06 10:37:33
 tags:
   - Webpack
   - TypeScript
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title
@@ -25,8 +25,9 @@ meta:
 Some time ago I updated [typescript-library-starter](https://github.com/alexjoverm/typescript-library-starter), a zero-config starter repo for writting a [TypeScript](https://www.typescriptlang.org/) library, with [tree-shaking](https://webpack.js.org/guides/tree-shaking), [babel-preset-env](https://github.com/babel/babel-preset-env), and more:
 
 <!-- {% twitter https://twitter.com/alexjoverm/status/838681719993663488 %} -->
-
-<Tweet id="838681719993663488"/>
+<ClientOnly>
+  <Tweet id="838681719993663488"/>
+</ClientOnly>
 
 Right now it uses RollupJS, but same concepts apply. So I thought, why not sharing that to the people? Hope you find it useful and safes you some time I had to spend :)
 

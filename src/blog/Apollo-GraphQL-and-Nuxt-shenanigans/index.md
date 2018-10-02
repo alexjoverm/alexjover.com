@@ -8,7 +8,7 @@ tags:
   - VueJS
 excerpt: What could go wrong by building a hackaton project with Apollo, GraphQL, Vue and Nuxt?
 featuredImage: /posts/hackaton.jpg
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

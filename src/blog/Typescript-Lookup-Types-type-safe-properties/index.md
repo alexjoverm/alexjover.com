@@ -5,7 +5,7 @@ excerpt: Typescript 2.1 introduced lookup types. What are they for? In which cas
 date: 2017-04-11 12:55:23
 tags:
   - TypeScript
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

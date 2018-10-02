@@ -7,7 +7,7 @@ tags:
   - TypeScript
   - VueJS
 featuredImage: /posts/love.jpg
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

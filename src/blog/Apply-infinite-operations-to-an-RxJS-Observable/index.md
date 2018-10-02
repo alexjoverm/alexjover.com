@@ -7,7 +7,7 @@ description: Learn how easy is to apply a set of operations to a RxJS Observable
 excerpt: Learn how easy is to apply a set of operations to a RxJS Observable in JavaScript
 date: 2017-08-14 08:27:38
 featuredImage: /posts/rxjs.png
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title

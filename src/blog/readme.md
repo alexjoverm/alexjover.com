@@ -1,5 +1,5 @@
 ---
 sidebar: false
-layout: Blog
+page: Blog
 hero: heroes/Blog
 ---

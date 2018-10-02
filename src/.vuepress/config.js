@@ -1,14 +1,5 @@
 const path = require("path");
-
-class X {
-  get fullName() {
-    return `${this.name} ${this.surname}`;
-  }
-
-  set fullName(value) {
-    // ...
-  }
-}
+const webpack = require("webpack");
 
 module.exports = {
   title: "Alex Jover",
@@ -39,6 +30,13 @@ module.exports = {
         "@": path.resolve(__dirname, "theme"),
         styles: path.resolve(__dirname, "theme", "styles")
       }
-    }
+    },
+    plugins: [
+      new webpack.DefinePlugin({
+        "process.env": {
+          NODE_ENV: JSON.stringify(process.env.NODE_ENV)
+        }
+      })
+    ]
   }
 };

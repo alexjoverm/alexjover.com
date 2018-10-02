@@ -6,7 +6,7 @@ description: Learn a few tips to be a happier and better developer and be a bett
 excerpt: Learn a few tips to be a happier and better developer and be a better team player
 date: 2017-11-13 14:58:35
 featuredImage: /posts/happy.jpg
-layout: Post
+page: Post
 hero: heroes/Post
 meta:
   - property: og:title
