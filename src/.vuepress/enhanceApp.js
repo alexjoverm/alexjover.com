@@ -37,7 +37,7 @@ export default ({
       debug: {
         enabled: !isProd,
         trace: false,
-        sendHitTask: false
+        sendHitTask: isProd
       },
       autoTracking: {
         exception: true,
