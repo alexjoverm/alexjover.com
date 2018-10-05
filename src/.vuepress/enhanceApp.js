@@ -12,6 +12,7 @@
 // ];
 
 import VueAnalytics from "vue-analytics";
+import VueDisqus from "vue-disqus";
 
 export default ({
   Vue,
@@ -29,7 +30,6 @@ export default ({
     options = { year: "numeric", month: "short", day: "numeric" }
   ) => new Date(date).toLocaleDateString(lang, options);
 
-  // if (isProd && isClient) {
   if (isClient) {
     Vue.use(VueAnalytics, {
       id: "UA-93226517-1",
@@ -45,6 +45,8 @@ export default ({
       }
     });
   }
+
+  Vue.use(VueDisqus);
 
   // Components
   Vue.component("Tweet", () => import("vue-tweet-embed/tweet"));

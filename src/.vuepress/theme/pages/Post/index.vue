@@ -4,7 +4,9 @@
       <Content/>
       <PrevNextLinks/>
       <AboutAuthor/>
+      <vue-disqus shortname="alexjover" :identifier="postID"></vue-disqus>
     </div>
+    
     <SubscribeModal v-show="modalOpen" @close="modalOpen = false"/>
     <slot name="sidebar"/>
   </div>
@@ -29,6 +31,11 @@ export default {
   data: () => ({
     modalOpen: false
   }),
+  computed: {
+    postID() {
+      return this.$route.path && this.$route.path.toLowerCase();
+    }
+  },
   methods: {
     handleScroll: debounce(function() {
       const scroll = window.scrollY;

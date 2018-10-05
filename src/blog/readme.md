@@ -4,13 +4,13 @@ page: Blog
 hero: heroes/Blog
 meta:
   - property: og:title
-    content: 1 year organising Alicante Frontend
+    content: Alex Jover Blog
   - property: og:description
-    content: My insights about organising Alicante Frontend's meetup after a year
+    content: Articles and tutorials about JavaScript, Vue, PWA, Web Performance and all things web.
   - property: og:image
     content: /alex.jpg
   - property: og:url
-    content: /blog/1-year-organising-alicante-frontend/
+    content: /blog/
   - name: twitter:card
     content: summary
 ---

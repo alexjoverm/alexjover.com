@@ -4,13 +4,13 @@ page: Home
 sidebar: false
 meta:
   - property: og:title
-    content: 1 year organising Alicante Frontend
+    content: Alex Jover
   - property: og:description
-    content: My insights about organising Alicante Frontend's meetup after a year
+    content: Sharpen your skills on JavaScript, Vue and the Web Platform by looking on this web courses, trainings and materials.
   - property: og:image
     content: /alex.jpg
   - property: og:url
-    content: /blog/1-year-organising-alicante-frontend/
+    content: /
   - name: twitter:card
     content: summary
 ---
