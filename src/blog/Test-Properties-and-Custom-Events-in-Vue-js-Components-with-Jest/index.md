@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn different ways to test properties, events and custom events
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Properties-and-Custom-Events-in-Vue-js-Components-with-Jest
+    content: https://alexjover.com/blog/Test-Properties-and-Custom-Events-in-Vue-js-Components-with-Jest
   - name: twitter:card
     content: summary
 ---

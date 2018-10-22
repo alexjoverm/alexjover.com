@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: vue-test-utils provide us with a set of utilities to assert on Vue.js components.
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Styles-and-Structure-of-Vue-js-Components-in-Jest
+    content: https://alexjover.com/blog/Test-Styles-and-Structure-of-Vue-js-Components-in-Jest
   - name: twitter:card
     content: summary
 ---

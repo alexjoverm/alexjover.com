@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: I wanted to learn about PWA (Progressive Web Apps), so I decided to make this blog a PWA
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/How-I-made-a-Progressive-Web-App-out-of-my-Blog/
+    content: https://alexjover.com/blog/How-I-made-a-Progressive-Web-App-out-of-my-Blog/
   - name: twitter:card
     content: summary
 ---

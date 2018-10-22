@@ -16,9 +16,9 @@ meta:
   - property: og:description
     content: What could go wrong by building a hackaton project with Apollo, GraphQL, Vue and Nuxt?
   - property: og:image
-    content: /posts/hackaton.jpg
+    content: https://alexjover.com/posts/hackaton.jpg
   - property: og:url
-    content: /blog/Apollo-GraphQL-and-Nuxt-shenanigans/
+    content: https://alexjover.com/blog/Apollo-GraphQL-and-Nuxt-shenanigans/
   - name: twitter:card
     content: summary
 ---

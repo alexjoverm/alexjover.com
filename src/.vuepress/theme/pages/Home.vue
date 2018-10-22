@@ -10,7 +10,7 @@
           <SubscribeFormBase formLocation="home">
             <div slot="header">
               <h4 class="form-title">STAY UP TO DATE</h4>
-              <p>Subscribe now I'll send you my <strong>top 5 articles</strong>. No spam.</p>
+              <p>Subscribe now I'll send you my <strong>top articles</strong>. No spam.</p>
             </div>
           </SubscribeFormBase>
         </div>

@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Let's see how to use vue-test-utils to test a fully rendered component tree.
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Deeply-Rendered-Vue-js-Components-in-Jest
+    content: https://alexjover.com/blog/Test-Deeply-Rendered-Vue-js-Components-in-Jest
   - name: twitter:card
     content: summary
 ---

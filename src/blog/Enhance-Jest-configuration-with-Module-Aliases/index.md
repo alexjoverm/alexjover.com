@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn how to use Module Aliases Jest configuration to avoid using relative paths
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Enhance-Jest-configuration-with-Module-Aliases
+    content: https://alexjover.com/blog/Enhance-Jest-configuration-with-Module-Aliases
   - name: twitter:card
     content: summary
 ---

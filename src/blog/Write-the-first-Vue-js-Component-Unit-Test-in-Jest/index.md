@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn how to write unit tests for VueJS components with the official tools and the Jest framework.
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Deeply-Rendered-Vue-js-Components-in-Jest
+    content: https://alexjover.com/blog/Test-Deeply-Rendered-Vue-js-Components-in-Jest
   - name: twitter:card
     content: summary
 ---

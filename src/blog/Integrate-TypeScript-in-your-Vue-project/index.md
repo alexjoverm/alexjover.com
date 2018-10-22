@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: A step by step guide on how to use TypeScript in your Vue project in an approachable and pragmatic way.
   - property: og:image
-    content: /posts/love.jpg
+    content: https://alexjover.com/posts/love.jpg
   - property: og:url
-    content: /blog/Integrate-TypeScript-in-your-Vue-project/
+    content: https://alexjover.com/blog/Integrate-TypeScript-in-your-Vue-project/
   - name: twitter:card
     content: summary
 ---

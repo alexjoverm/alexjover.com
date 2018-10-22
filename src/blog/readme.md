@@ -8,9 +8,9 @@ meta:
   - property: og:description
     content: Articles and tutorials about JavaScript, Vue, PWA, Web Performance and all things web.
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/
+    content: https://alexjover.com/blog/
   - name: twitter:card
     content: summary
 ---

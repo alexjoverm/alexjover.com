@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: We'll see here how to setup Webpack 2, along with TypeScript and Babel to achieve dead code elimination with tree-shaking
   - property: og:image
-    content: /posts/tree.jpeg
+    content: https://alexjover.com/posts/tree.jpeg
   - property: og:url
-    content: /blog/Tree-shaking-with-Webpack-2-TypeScript-and-Babel
+    content: https://alexjover.com/blog/Tree-shaking-with-Webpack-2-TypeScript-and-Babel
   - name: twitter:card
     content: summary
 ---

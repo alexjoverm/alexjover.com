@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn how to test methods and cope with mocking module dependencies.
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Methods-and-Mock-Dependencies-in-Vue-js-with-Jest
+    content: https://alexjover.com/blog/Test-Methods-and-Mock-Dependencies-in-Vue-js-with-Jest
   - name: twitter:card
     content: summary
 ---

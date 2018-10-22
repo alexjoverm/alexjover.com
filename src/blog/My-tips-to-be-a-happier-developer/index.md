@@ -14,9 +14,9 @@ meta:
   - property: og:description
     content: Learn a few tips to be a happier and better developer and be a better team player
   - property: og:image
-    content: /posts/happy.jpg
+    content: https://alexjover.com/posts/happy.jpg
   - property: og:url
-    content: /blog/My-tips-to-be-a-happier-developer
+    content: https://alexjover.com/blog/My-tips-to-be-a-happier-developer
   - name: twitter:card
     content: summary
 ---

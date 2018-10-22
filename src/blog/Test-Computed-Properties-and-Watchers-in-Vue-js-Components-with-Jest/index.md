@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn about testing the Computed Properties and Watchers reactivity in Vue.js
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Computed-Properties-and-Watchers-in-Vue-js-Components-with-Jest
+    content: https://alexjover.com/blog/Test-Computed-Properties-and-Watchers-in-Vue-js-Components-with-Jest
   - name: twitter:card
     content: summary
 ---

@@ -13,9 +13,9 @@ meta:
   - property: og:description
     content: Typescript 2.1 introduced lookup types. What are they for? In which cases are they useful?
   - property: og:image
-    content: /alex.jpeg
+    content: https://alexjover.com/alex.jpeg
   - property: og:url
-    content: /blog/Typescript-Lookup-Types-type-safe-properties
+    content: https://alexjover.com/blog/Typescript-Lookup-Types-type-safe-properties
   - name: twitter:card
     content: summary
 ---

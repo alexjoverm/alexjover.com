@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn how to test content distributed using slots and named slots.
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/Test-Vue-js-Slots-in-Jest
+    content: https://alexjover.com/blog/Test-Vue-js-Slots-in-Jest
   - name: twitter:card
     content: summary
 ---

@@ -15,9 +15,9 @@ meta:
   - property: og:description
     content: Learn how easy is to apply a set of operations to a RxJS Observable in JavaScript.
   - property: og:image
-    content: /posts/rxjs.png
+    content: https://alexjover.com/posts/rxjs.png
   - property: og:url
-    content: /blog/Apply-infinite-operations-to-an-RxJS-Observable/
+    content: https://alexjover.com/blog/Apply-infinite-operations-to-an-RxJS-Observable/
   - name: twitter:card
     content: summary
 ---

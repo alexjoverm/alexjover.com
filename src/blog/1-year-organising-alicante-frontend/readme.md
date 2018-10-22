@@ -13,9 +13,9 @@ meta:
   - property: og:description
     content: My insights about organising Alicante Frontend's meetup after a year
   - property: og:image
-    content: /alex.jpg
+    content: https://alexjover.com/alex.jpg
   - property: og:url
-    content: /blog/1-year-organising-alicante-frontend/
+    content: https://alexjover.com/blog/1-year-organising-alicante-frontend/
   - name: twitter:card
     content: summary
 ---

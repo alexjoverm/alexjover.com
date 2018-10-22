@@ -14,9 +14,9 @@ meta:
   - property: og:description
     content: Prettier support for TypeScript just landed. Let's see how tslint-config-prettier helps to seamlessly combine it with TSLint
   - property: og:image
-    content: /posts/parrot.jpg
+    content: https://alexjover.com/posts/parrot.jpg
   - property: og:url
-    content: /blog/Use-Prettier-with-TSLint-and-be-happy
+    content: https://alexjover.com/blog/Use-Prettier-with-TSLint-and-be-happy
   - name: twitter:card
     content: summary
 ---
