@@ -2,6 +2,22 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
+  head: [
+    ["link", { rel: "icon", href: "/logo.png" }],
+    [
+      "script",
+      {
+        async: true,
+        type: "text/javascript",
+        id: "_carbonads_js",
+        src:
+          "//cdn.carbonads.com/carbon.js?serve=CK7DL27I&placement=alexjovercom"
+      }
+    ]
+  ]
+};
+
+module.exports = {
   title: "Alex Jover",
   description: "Web and JavaScript",
   head: [["link", { rel: "icon", href: "/favicon.jpg" }]],

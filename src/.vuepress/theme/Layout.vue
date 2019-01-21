@@ -1,17 +1,13 @@
 <template>
-  <div class="theme-container"
-    :class="classes"
-    @touchstart="onTouchStart"
-    @touchend="onTouchEnd">
-
+  <div class="theme-container" :class="classes" @touchstart="onTouchStart" @touchend="onTouchEnd">
     <Navbar v-if="shouldShowNavbar" :should-show-menu="shouldShowMenu" @toggle-menu="toggleMenu"/>
     <div class="hero-container" v-if="shouldShowHero">
       <component :is="heroComponent"></component>
     </div>
 
-    <div class="wrapper">  
+    <div class="wrapper">
       <div v-if="shouldShowMenu" class="menu-wrapper">
-        <Menu :open="isMenuOpen" />
+        <Menu :open="isMenuOpen"/>
         <MenuBackdrop v-show="isMenuOpen" @toggle-menu="toggleMenu(false)"/>
       </div>
 
@@ -29,7 +25,7 @@
 
     <Footer/>
     <!-- <pre style="width: 100%; background: #eee; overflow: auto;">{{ $page }}</pre>
-    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre> -->
+    <pre style="width: 100%; background: #eee; overflow: auto;">{{ $site }}</pre>-->
     <!-- 
     <div class="menu-mask" @click="toggleMenu(false)"></div>
     <Menu :items="menuItems" @toggle-menu="toggleMenu">
@@ -43,7 +39,7 @@
     <Page v-else :menu-items="menuItems">
       <slot name="page-top" slot="top"/>
       <slot name="page-bottom" slot="bottom"/>
-    </Page> -->
+    </Page>-->
   </div>
 </template>
 

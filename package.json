@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "vuepress build src",
+    "eject": "vuepress eject"
   },
   "author": "Alex Jover <alejovermorales@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.9.2",
     "sass-loader": "^7.1.0",
-    "vuepress": "^1.0.0-alpha.2"
+    "vuepress": "^1.0.0-alpha.32"
   },
   "dependencies": {
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
