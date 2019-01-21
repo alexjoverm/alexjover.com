@@ -1,8 +1,13 @@
 <template>
   <div class="sidebar">
-    <div id="carbonads"></div>
-    <SubscribeForm class="sidebar-item" formLocation="sidebar"/>
+    <script
+      async
+      type="application/javascript"
+      src="//cdn.carbonads.com/carbon.js?serve=CK7DL27I&placement=alexjovercom"
+      id="_carbonads_js"
+    ></script>
     <SidebarBook class="sidebar-item"/>
+    <SubscribeForm class="sidebar-item" formLocation="sidebar"/>
   </div>
 </template>
 
@@ -80,8 +85,8 @@ $sidebar-margin-md: 60px;
 
 <style>
 #carbonads {
-  --width: 180px;
-  --font-size: 14px;
+  --width: 140px;
+  --font-size: 13px;
 }
 
 #carbonads {
@@ -90,19 +95,21 @@ $sidebar-margin-md: 60px;
     sans-serif;
   display: block;
   overflow: hidden;
-  margin-bottom: 20px;
+  width: 100%;
   max-width: var(--width);
   border-radius: 4px;
   text-align: center;
-  box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1);
-  background-color: hsl(0, 0%, 98%);
   font-size: var(--font-size);
   line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.5rem;
 }
 
 #carbonads a {
   color: inherit;
   text-decoration: none;
+  font-weight: normal;
 }
 
 #carbonads a:hover {
@@ -135,17 +142,10 @@ $sidebar-margin-md: 60px;
   padding: 0 1em 8px;
 }
 
-.carbon-poweredby {
+#carbonads .carbon-poweredby {
   display: block;
   padding: 10px var(--font-size);
-  background: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 5px,
-      hsla(0, 0%, 0%, 0.025) 5px,
-      hsla(0, 0%, 0%, 0.025) 10px
-    )
-    hsla(203, 11%, 95%, 0.4);
+  color: #aaa;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 600;
