@@ -1,10 +1,7 @@
 <template>
   <nav class="nav-links" v-if="userLinks.length || repoLink">
     <!-- user links -->
-    <div
-      class="nav-item"
-      v-for="item in userLinks"
-      :key="item.link">
+    <div class="nav-item" v-for="item in userLinks" :key="item.link">
       <DropdownLink v-if="item.type === 'links'" :item="item"/>
       <NavLink v-else :item="item"/>
     </div>
@@ -79,6 +76,20 @@ export default {
     padding: $navbar-link-padding-v $navbar-link-padding-h;
     font-weight: 600;
     text-transform: uppercase;
+    position: relative;
+
+    &.highlight:after {
+      display: block;
+      content: "New";
+      position: absolute;
+      font-size: 10px;
+      background: #e15917;
+      color: white;
+      padding: 2px 3px;
+      border-radius: 999px;
+      right: 0;
+      top: -3px;
+    }
 
     &:hover,
     &.router-link-active {

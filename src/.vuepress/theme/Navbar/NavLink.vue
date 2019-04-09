@@ -1,6 +1,7 @@
 <template>
   <router-link
     class="nav-link"
+    :class="{ highlight: item.highlight }"
     :to="link"
     v-if="!isExternal(link)"
     :exact="exact"
@@ -9,11 +10,10 @@
     v-else
     :href="link"
     class="nav-link external"
+    :class="{ highlight: item.highlight }"
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
     :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
-  >
-    {{ item.text }}
-  </a>
+  >{{ item.text }}</a>
 </template>
 
 <script>

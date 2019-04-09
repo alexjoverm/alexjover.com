@@ -21,6 +21,11 @@ module.exports = {
       "/": {
         sidebar: ["/", "/ham", "/caca/"],
         nav: [
+          {
+            text: "VueDose Tips",
+            link: "https://vuedose.tips?utm_source=alexjoverm",
+            highlight: true
+          },
           { text: "Blog", link: "/blog/" }
           // { text: "Courses", link: "/courses" }
         ]
