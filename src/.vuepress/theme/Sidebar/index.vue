@@ -1,22 +1,24 @@
 <template>
   <div class="sidebar">
+    <SidebarBook class="sidebar-item"/>
+    <SidebarSponsors/>
+    <SubscribeForm class="sidebar-item" formLocation="sidebar"/>
     <script
       async
       type="application/javascript"
       src="//cdn.carbonads.com/carbon.js?serve=CK7DL27I&placement=alexjovercom"
       id="_carbonads_js"
     ></script>
-    <SidebarBook class="sidebar-item"/>
-    <SubscribeForm class="sidebar-item" formLocation="sidebar"/>
   </div>
 </template>
 
 <script>
 import SubscribeForm from "./SubscribeForm";
 import SidebarBook from "./SidebarBook";
+import SidebarSponsors from "./SidebarSponsors";
 
 export default {
-  components: { SubscribeForm, SidebarBook }
+  components: { SubscribeForm, SidebarBook, SidebarSponsors }
 };
 </script>
 
