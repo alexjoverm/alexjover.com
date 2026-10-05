@@ -23,7 +23,7 @@ module.exports = {
         nav: [
           {
             text: "VueDose Tips",
-            link: "https://vuedose.tips?utm_source=alexjoverm",
+            link: "https://vuedose.dev?utm_source=alexjoverm",
             highlight: true
           },
           { text: "Blog", link: "/blog/" }
